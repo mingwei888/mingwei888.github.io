@@ -1,0 +1,20 @@
+html body{width:1002px;}
+.about-page #main,
+.contact-page #main,
+.project-page #main{
+	background-position:680px 0;
+}
+
+.wrapper-full{
+	width:912px;
+	padding:3.375em 44px;/* 54/16 - 44/1000 */
+
+}
+
+.work-item a:hover img{
+	margin-left:0;	
+}
+
+nav ul li{
+	*display: inline;
+}

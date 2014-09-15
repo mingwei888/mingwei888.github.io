@@ -1,0 +1,101 @@
+/*
+
+Momentum 1280px Screen and up
+
+*/
+
+body{
+	font-size:106.25%;/* 17px; */
+}
+
+/* @group Default type styling
+====================================================================== */
+
+/* Heading */
+
+h1{
+	font-size:2.625em;/* 42/16 */
+}
+
+/* @end */
+
+/* @group Modules
+====================================================================== */
+
+/* Buttons */
+
+.btn{
+	display:inline-block;
+	color:#fff;
+	background-color:#00aed7;
+	padding:9px 18px;
+	text-align:center;
+	text-decoration:none;
+	font-weight:bold;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/* @end */
+
+
+/* @group About Page
+====================================================================== */
+
+.home .serviceswrap i{
+	
+}
+
+/* @end */
+
+/* @group About Page
+====================================================================== */
+.team{padding-top:36px;}
+
+/* @end */
+
+/* @group Method Page
+====================================================================== */
+
+.method-page #hero h1{
+	font-size:118px;
+}
+
+/* @end */
+
+/* @group Generic Layout
+====================================================================== */
+
+#hero{
+	padding:3.25em 3.6%;/* 36px */
+}
+
+.articlewrap{
+	padding:4.94117647058824em 0;/* 84/17 */
+}
+
+.wrapper-full{
+	padding:4.94117647058824em 4.44%;/* 84/17 - 44/1000 */
+
+}
+
+/* @end */
+
+/* @group Single Project page
+====================================================================== */
+
+.project-page #hero{height:320px;padding:2.25em 3.6%;}
+
+/* @end */
+
+/* @group Feedback pages (thankyou, 404, unsubscribe)
+====================================================================== */
+
+
+.message-page #hero h1{
+	font-size:118px;
+}
+
+
+/* @end */

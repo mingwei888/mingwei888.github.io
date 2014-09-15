@@ -1,0 +1,107 @@
+/**
+
+ HTML5 & 4 reset stylesheet
+ Adapted from YUI & HTML5 Doctor
+ v1.0
+ 
+**/
+
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,img,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,hgroup,menu,nav,summary,time,mark,audio,video,header,footer { 
+    margin:0;
+    padding:0;
+    border:0;
+    font-weight:inherit;
+    font-style:inherit;
+    font-size:100%;
+    font-family:inherit;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+a:link{text-decoration:事实上事实上 ; color:#c00 ;}
+a:visited {text-decoration:事实上事实上 ; color:#c30 ;}
+a:hover {text-decoration:事实上事实上 ; color:#f60 ;}
+a:active {text-decoration:事实上事实上 ; color:#F90 ;}
+
+html { 
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    -webkit-text-size-adjust:none;
+    -ms-text-size-adjust:none;
+	overflow-y: scroll;
+}
+
+ol,ul { 
+	list-style:none; 
+}
+
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,img { 
+    display:block;
+}
+
+blockquote,q {
+    quotes:none;
+}
+
+blockquote:before, 
+blockquote:after,
+q:before, 
+q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration:line-through;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+input, 
+select {
+    vertical-align:middle;
+}
+
+table {	
+	border-collapse:separate; 
+	border-spacing:0; 
+}
+caption,
+th,
+td { 
+	text-align:left; 
+	font-weight:normal; 
+}
+
+input { 
+	vertical-align:middle; 
+}
+img,
+object,
+embed {max-width: 100%;}

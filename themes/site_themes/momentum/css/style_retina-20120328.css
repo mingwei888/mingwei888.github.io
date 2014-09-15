@@ -1,0 +1,30 @@
+.learn{
+	background-image: url(../icons/learn@2x.png);
+	background-size:24px 24px;
+}
+.build{
+	background-image: url(../icons/build@2x.png);
+	background-size:24px 24px;
+}
+
+.love{
+	background-image: url(../icons/love@2x.png);
+	background-size:24px 24px;
+}
+
+h2.design,
+h3.design{
+	background-image:url(../icons/design@2x.png);
+	background-size:24px 24px;
+}
+h2.development,
+h3.development{
+	background-image:url(../icons/development@2x.png);
+	background-size:24px 24px;
+}
+h2.strategy,
+h3.strategy{
+	background-image:url(../icons/strategy@2x.png);
+	background-size:24px 24px;
+}
+/* Localized */
