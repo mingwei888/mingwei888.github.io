@@ -310,11 +310,11 @@ h3.tools{
 .home .serviceswrap i{
 	display:block;
 	width:891px;
-	height:590px;
+	height:680px;
 	position:absolute;
-	bottom:0;
-	right:40%;
-	background:transparent url(../ipad.jpg) no-repeat 0 0;
+	bottom:12%;
+	right:34%;
+	background:transparent url(../apiBox2.png) no-repeat 0 0;
 }
 
 .home .serviceswrap b{

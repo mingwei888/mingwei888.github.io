@@ -1,0 +1,484 @@
+* {
+	-webkit-font-smoothing: antialiased
+}
+
+.col-lg-4.clear:nth-child(3n+1) {
+	clear: left
+}
+
+.view-template [swyg-overlay=true] {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	opacity: 0
+}
+
+.view-template [swyg] {
+	position: relative
+}
+
+.view-template {
+	overflow-x: hidden
+}
+
+.view-template .logo {
+	position: relative;
+	z-index: 99!important;
+	width: 180px;
+	height: 180px;
+	overflow: hidden;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px
+}
+
+.view-template .logo img {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	width: 180px;
+	height: 180px
+}
+
+.view-template .social {
+	margin-left: 10px
+}
+
+.view-template .social ul {
+	padding: 0;
+	margin: 0
+}
+
+.view-template .social ul li {
+	list-style-type: none;
+	float: left;
+	margin-left: 4px
+}
+
+.view-template .social ul li img {
+	width: 30px
+}
+
+.view-template .features h3 {
+	padding: 15px 0 10px
+}
+
+.view-template .features p {
+	padding-top: 15px
+}
+
+.view-template .features .img-max {
+	overflow: hidden;
+	max-height: 200px;
+	border-radius: 10px
+}
+
+.view-template .features .img-max img {
+	max-width: 360px;
+	width: 360px
+}
+
+.view-template footer {
+	min-height: 120px!important;
+	padding-top: 40px
+}
+
+.view-template footer a {
+	margin-right: 10px
+}
+
+.view-template footer .social a {
+	margin-right: 0
+}
+
+.view-template .badges {
+	left: 0;
+	position: relative
+}
+
+.view-template .badges a {
+	margin-right: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+	border-radius: 5px
+}
+
+.view-template .badges a img {
+	height: 60px;
+	background: #000
+}
+
+.view-template .phone {
+	float: left;
+	z-index: 2;
+	position: relative
+}
+
+.view-template .phone.black-iphone .carousel,.view-template .phone.white-iphone .carousel {
+	top: 101px;
+	left: 29px;
+	height: 487px;
+	width: 274px;
+	position: absolute;
+	overflow: hidden
+}
+
+.view-template .phone.black-iphone .slide img,.view-template .phone.white-iphone .slide img {
+	width: 274px;
+	min-height: 487px
+}
+
+.view-template .phone.black-iphone,.view-template .phone.white-iphone {
+	height: 690px;
+	width: 328px
+}
+
+.view-template .phone.white-iphone {
+	background: url(../img/iphone-white.png) no-repeat;
+	background-size: 100%
+}
+
+.view-template .phone.black-iphone {
+	background: url(../img/iphone-black.png) no-repeat;
+	background-size: 100%
+}
+
+.view-template .phone.white-samsung .carousel {
+	top: 59px;
+	left: 18px;
+	height: 520px;
+	width: 293px;
+	border-radius: 7px;
+	position: absolute;
+	overflow: hidden
+}
+
+.view-template .phone.white-samsung .slide img {
+	width: 295px;
+	min-height: 520px
+}
+
+.view-template .phone.white-samsung {
+	height: 640px;
+	width: 325px;
+	background: url(../img/samsung-white.png) no-repeat;
+	background-size: 100%
+}
+
+@media (max-width:1200px) {
+	.view-template .logo,.view-template .logo img {
+		width: 160px;
+		height: 160px
+	}
+
+	.view-template .features .img-max img {
+		width: 100%
+	}
+
+	.view-template .features h3 {
+		font-size: 20px
+	}
+}
+
+@media (max-width:990px) {
+	.view-template .logo,.view-template .logo img {
+		width: 120px;
+		height: 120px
+	}
+
+	.view-template .phone {
+		zoom: 80%
+	}
+
+	.view-template .badges {
+		margin-left: 0!important;
+		padding: 30px 0
+	}
+}
+
+@media (max-width:768px) {
+	.view-template p {
+		margin: 0!important
+	}
+
+	.view-template .badges a img {
+		height: 50px
+	}
+
+	.view-template .features {
+		padding: 0;
+		padding-left: 15px
+	}
+
+	.view-template .features .feature {
+		padding-left: 0
+	}
+
+	.view-template .features .img-max {
+		width: 290px
+	}
+
+	.view-template .features .img-max img {
+		max-width: none;
+		width: 290px;
+		height: auto
+	}
+
+	.view-template .features h3 {
+		width: 290px;
+		text-align: left!important
+	}
+
+	.view-template .features p {
+		width: 290px
+	}
+}
+
+.template-default header {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 30px;
+	min-height: 700px
+}
+
+.template-default header .bg-img {
+	width: 100%;
+	height: 100%;
+	position: absolute!important;
+	min-height: 700px
+}
+
+.template-default .social {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 999
+}
+
+.template-default .phone {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 70px
+}
+
+.template-default .content {
+	padding-top: 5px;
+	padding-bottom: 60px
+}
+
+@media (max-width:1200px) {
+	.template-default .title {
+		font-size: 40px!important;
+		line-height: 48px!important
+	}
+
+	.template-default .sub-title {
+		font-size: 20px!important;
+		line-height: 28px!important
+	}
+}
+
+@media (max-width:991px) {
+	.template-default .phone {
+		margin-top: 90px
+	}
+
+	.template-default .logo {
+		margin: 0!important;
+		margin-top: 30px!important;
+		margin-bottom: 30px!important
+	}
+
+	.template-default .intro,.template-default .sub-title,.template-default .title {
+		margin: 0!important;
+		margin-bottom: 20px!important
+	}
+
+	.template-default .intro {
+		font-size: 16px!important;
+		line-height: 28px!important
+	}
+}
+
+@media (max-width:768px) {
+	.template-default .phone {
+		margin-top: 30px;
+		zoom: 90%
+	}
+
+	.template-default .intro,.template-default .sub-title,.template-default .title {
+		margin: 0!important;
+		margin-bottom: 20px!important
+	}
+}
+
+.template-fullscreen {
+	width: 100%;
+	position: relative;
+	padding-bottom: 30px
+}
+
+.template-fullscreen .bg {
+	width: 100%;
+	height: 100%;
+	position: fixed!important
+}
+
+.template-fullscreen .phone {
+	margin-top: 30px
+}
+
+.template-fullscreen footer {
+	padding: 30px 0
+}
+
+.template-fullscreen .social {
+	margin-bottom: 30px
+}
+
+@media (max-width:1200px) {
+	.template-fullscreen .title {
+		font-size: 40px!important;
+		line-height: 48px!important
+	}
+
+	.template-fullscreen .sub-title {
+		font-size: 20px!important;
+		line-height: 28px!important
+	}
+}
+
+@media (max-width:991px) {
+	.template-fullscreen .logo {
+		margin: 0!important;
+		margin-top: 30px!important;
+		margin-bottom: 30px!important
+	}
+
+	.template-fullscreen .intro,.template-fullscreen .sub-title,.template-fullscreen .title {
+		text-align: left!important;
+		margin: 0!important;
+		margin-bottom: 20px!important
+	}
+
+	.template-fullscreen .intro {
+		font-size: 16px!important;
+		line-height: 28px!important
+	}
+}
+
+@media (max-width:768px) {
+	.template-fullscreen .intro,.template-fullscreen .sub-title,.template-fullscreen .title {
+		margin: 0!important;
+		margin-bottom: 20px!important
+	}
+}
+
+.template-parallax header {
+	height: 80px;
+	width: 100%;
+	position: fixed!important;
+	z-index: 99!important
+}
+
+.template-parallax header .name {
+	float: left;
+	width: 350px;
+	margin-left: 15px
+}
+
+.template-parallax .social {
+	position: fixed;
+	right: 20px;
+	top: 24px
+}
+
+.template-parallax .phone {
+	margin-top: 150px;
+	margin-bottom: 30px
+}
+
+.template-parallax .badges {
+	margin-left: 0
+}
+
+.template-parallax .slides {
+	width: 100%;
+	z-index: 98;
+	position: relative;
+	top: 0
+}
+
+.template-parallax .slide-page {
+	background-attachment: fixed!important;
+	width: 100%;
+	min-height: 700px;
+	position: relative;
+	padding: 0
+}
+
+.template-parallax.view-template .logo {
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	float: left
+}
+
+.template-parallax.view-template .logo img {
+	width: 80px;
+	height: 80px
+}
+
+@media (max-width:992px) {
+	.template-parallax .title {
+		margin-top: 160px!important;
+		margin-left: 0!important
+	}
+
+	.template-parallax .sub-title {
+		margin-left: 0!important
+	}
+
+	.template-parallax .intro {
+		font-size: 16px!important;
+		line-height: 28px!important
+	}
+
+	.template-parallax header .name {
+		font-size: 18px!important
+	}
+
+	.template-parallax #slide1,.template-parallax #slide2 {
+		padding-bottom: 60px
+	}
+}
+
+@media (max-width:768px) {
+	.template-parallax header .name {
+		position: fixed!important;
+		top: 0;
+		left: 95px;
+		font-size: 24px;
+		margin: 0!impportant
+	}
+
+	.template-parallax .phone {
+		margin-top: 30px!important
+	}
+
+	.template-parallax h2 {
+		font-size: 36px!important;
+		line-height: 44px!important;
+		text-align: left!important
+	}
+
+	.template-parallax .slide-2-headline,.template-parallax .slide-3-headline {
+		margin: 60px 0!important
+	}
+
+	.template-parallax .slide-3-headline {
+		margin: 100px 0!important
+	}
+}

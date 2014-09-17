@@ -1,0 +1,1 @@
+var resize=function(){$('[swyg="bg"]').height($(window).height()+100)};$(window).resize(resize),resize(),$("[href].ios, [href].android").click(function(){location.href=$(this).attr("href")});
