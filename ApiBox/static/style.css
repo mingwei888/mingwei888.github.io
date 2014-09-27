@@ -7252,8 +7252,14 @@ a .icon-rotate-90:before,a .icon-rotate-180:before,a .icon-rotate-270:before,a .
 	content: "\f09a"
 }
 
-.icon-github:before {
-	content: "\f09b"
+.icon-github:{
+    width: 100%;
+	background: #081218 url(boxbox.png); 
+	background-position: 0 0px;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #fff
+        
 }
 
 .icon-unlock:before {
