@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+<html itemscope="" itemtype="http://schema.org/WebPage" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" class="" static="yes" mode="normal"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="file://d15qhc0lu1ghnk.cloudfront.net/beacon.js" async=""></script><script type="text/javascript" async="" src="./rawview_files/keen-2.1.0-min.js"></script><script type="text/javascript" async="" src="./rawview_files/ga.js"></script><script src="./rawview_files/beacon(1).js" async=""></script><script type="text/javascript" async="" src="./rawview_files/keen-2.1.0-min(1).js"></script><script type="text/javascript" async="" src="./rawview_files/ga(1).js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-6.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"74f55de04c","applicationID":"4870173","transactionName":"IlcLQxBeWFoHShYTWAZdFhgRWVtBPUtNAk0IWw==","queueTime":0,"applicationTime":26,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-476.min.js","userAttributes":"GhoVUhBcVVoLVlJBA0NLDEMHAwUAUwoMTg9RAFQaVAYNBkBF"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQcOWVBADAsHVFBVBA=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(1),t(4),"addEventListener"in window&&t(2),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(3),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:8,2:5,3:9,4:7,5:20,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(2);t("loader").features.stn=!0,t(1),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:6,2:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:20,2:21,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:21,2:20,ee:"QJf3ax"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:21,2:20,ee:"QJf3ax"}],8:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:21,2:20,ee:"QJf3ax"}],9:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:5,2:21,ee:"QJf3ax"}],10:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:11,3:9,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],11:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],20:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],21:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:20,ee:"QJf3ax"}]},{},["G9z0Bl",3,10,4]);</script>
+
+
+<title>入境 | 闭目 触意 合掌 缓息 </title>
+
+
+<meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0,maximum-scale=3.0" id="viewport" name="viewport">
+<link href="./rawview_files/main_show-96e97ba41298662ad58577c9d9d8af1a.css" media="screen" rel="stylesheet" type="text/css"><link href="./rawview_files/css" media="screen" rel="stylesheet" type="text/css">
+
+<meta content="Mingwei&#39;s Site" property="og:title">
+<meta content="http://site216125-6081-6790.strikingly.com/" property="og:url">
+
+<meta content="Mingwei&#39;s Site" property="og:site_name">
+<meta property="og:description">
+<meta content="Mingwei&#39;s Site" itemprop="name">
+<meta itemprop="description">
+
+<meta content="summary" name="twitter:card">
+<meta content="Mingwei&#39;s Site" name="twitter:title">
+<meta content="" name="twitter:description">
+
+<meta name="description">
+<meta name="keywords">
+<meta content="//assets.strikingly.com" name="asset-url">
+<meta content="strikingly.com" name="strikingly-host-suffix">
+<meta name="mode">
+<meta content="{&quot;permalink&quot;:&quot;site216125-6081-6790&quot;,&quot;id&quot;:291925}" name="support-helper">
+<meta content="{}" name="site-configs">
+
+
+
+
+<script phantom="keep">
+if (!console) var console = {
+log: function() {},
+warn: function() {},
+error: function() {}
+};
+isHeadlessRendering = function() {
+return ($S.conf.headless_render && document.getElementsByTagName('html')[0].getAttribute('static') != 'yes');
+}
+var _gaq = _gaq || [];
+if (!isHeadlessRendering() && !$S.conf.is_screenshot_rendering) {
+/* load errorception */
+var _errs=["518ac810441fb4b7180002fa"];(function(a,b){a.onerror=function(){_errs.push(arguments)};
+var d=function(){var a=b.createElement("script"),c=b.getElementsByTagName("script")[0];
+a.src="//d15qhc0lu1ghnk.cloudfront.net/beacon.js";a.async=!0;
+c.parentNode.insertBefore(a,c)};a.addEventListener?a.addEventListener("load",d,!1):
+a.attachEvent("onload",d)})(window,document);
+//_gaq.push(['_setAccount', 'UA-25124444-6']);
+//_gaq.push(['_setDomainName', 'strikingly.com']);
+//_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+// configuration for keen.io
+var Keen=Keen||{configure:function(e){this._cf=e},addEvent:function(e,t,n,i){this._eq=this._eq||[],this._eq.push([e,t,n,i])},setGlobalProperties:function(e){this._gp=e},onChartsReady:function(e){this._ocrq=this._ocrq||[],this._ocrq.push(e)}};(function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src=("https:"==document.location.protocol?"https://":"http://")+"dc8na2hxrj29i.cloudfront.net/code/keen-2.1.0-min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
+
+// Configure the Keen object with your Project ID and (optional) access keys.
+//Keen.configure({
+//projectId: $S.page_meta.keenio_config.keenio_project_id,
+//writeKey: $S.page_meta.keenio_config.keenio_write_key // required for sending events
+//});
+}
+
+
+</script><style type="text/css"></style><style type="text/css"></style><style id="night_mode">html[mode="night"] { -webkit-filter: contrast(75%) brightness(115%) invert(); }html[mode="night"] img, html[mode="night"] i, html[mode="night"] video { -webkit-filter: invert(); }html[mode="night"] i span { -webkit-filter: invert(); }html[mode="night"] object[type="application/x-shockwave-flash"], html[mode="night"] object[type="application/x-shockwave-flash"] { -webkit-filter: invert(); }html[mode="night"] embed[type="application/x-shockwave-flash"], html[mode="night"] embed[type="application/x-shockwave-flash"] { -webkit-filter: invert(); }</style>
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style><style type="text/css">.fancybox-margin{margin-right:15px;}</style><style type="text/css"></style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style><style type="text/css"></style><style type="text/css">.fancybox-margin{margin-right:15px;}</style></head>
+<body class="show" id="pages" spellcheck="false" ontouchstart="" screen_capture_injected="true" ryt14262="1"><script phantom="keep" src="./rawview_files/jquery.min.js" type="text/javascript"></script>
+<script phantom="keep">
+window.jQuery || document.write('<script src="//assets.strikingly.com/assets/jquery-78ef9afcc2199a30e3ea419c9be7e2cb.js"><\/script>')
+</script>
+
+
+ 
+    
+    
+<script src="./rawview_files/main_static-9bdb74f2240031941ddeb651ecb206f1.js" type="text/javascript"></script>
+
+
+<div data-bind="attr:{&#39;class&#39;: data.templateVariation}" id="s-content" class="">
+<div data-bind="with: data.menu.components" id="strikingly-navigation-menu">
+<div class="wide navigator" data-bind="css: { transparent: !$root.data.showNav() }" style="display: none;">
+<div class="nav-container" data-bind="visible: $root.data.showNav()" valign="middle">
+<div class="nav center" data-bind="style: (window.edit_page.data.bodyFont &amp;&amp; window.edit_page.data.bodyFont() !== &#39;&#39;) ? {fontFamily: window.edit_page.data.bodyFont()  } : {fontFamily : &#39;inherit&#39;}" id="s-nav" style="font-family: inherit; ">
+<ul class="ib items s-nav" data-bind="template: { name: &#39;navbarItemTemplate&#39;, foreach: $root.data.slides }, css: { &#39;not-last&#39;: $root.data.submenu.list().length }">
+<li data-bind="visible: components.slideSettings.show_nav" style="display: none; ">
+<a class="s-nav-item" data-bind="text: components.slideSettings.name, css: { selected: isHighlighted() }, attr: { href: hashHref() }" href="http://site216125-6081-6790.strikingly.com/#home">Home</a>
+</li>
+
+<li data-bind="visible: components.slideSettings.show_nav" style="display: none; ">
+<a class="s-nav-item" data-bind="text: components.slideSettings.name, css: { selected: isHighlighted() }, attr: { href: hashHref() }" href="http://site216125-6081-6790.strikingly.com/#feature-listing">Feature Listing</a>
+</li>
+
+<li data-bind="visible: components.slideSettings.show_nav" style="display: none; ">
+<a class="s-nav-item" data-bind="text: components.slideSettings.name, css: { selected: isHighlighted() }, attr: { href: hashHref() }" href="http://site216125-6081-6790.strikingly.com/#projects">Projects</a>
+</li>
+
+<li data-bind="visible: components.slideSettings.show_nav" style="display: none; ">
+<a class="s-nav-item" data-bind="text: components.slideSettings.name, css: { selected: isHighlighted() }, attr: { href: hashHref() }" href="http://site216125-6081-6790.strikingly.com/#large-media">Large Media</a>
+</li>
+
+<li data-bind="visible: components.slideSettings.show_nav" style="display: none; ">
+<a class="s-nav-item" data-bind="text: components.slideSettings.name, css: { selected: isHighlighted() }, attr: { href: hashHref() }" href="http://site216125-6081-6790.strikingly.com/#action">Action</a>
+</li>
+
+<li data-bind="visible: components.slideSettings.show_nav" style="display: none; ">
+<a class="s-nav-item" data-bind="text: components.slideSettings.name, css: { selected: isHighlighted() }, attr: { href: hashHref() }" href="http://site216125-6081-6790.strikingly.com/#contacts">Contacts</a>
+</li>
+</ul><ul class="ib links left-border" data-bind="template: { name: &#39;navbarLinkTemplate&#39;, foreach: $root.data.submenu.list }"></ul></div>
+</div>
+
+
+</div>
+
+</div>
+
+<ul class="slides" data-bind="stopBinding: true">
+<li class="slide even selected">
+<a class="section-anchor" data-scroll-name="#1"></a>
+<a class="section-name-anchor" data-section-name="Home"></a>
+<div class="wide section title strikingly-light-text lazy-background image even" data-bind="&#39;className&#39;: background1.getSelectedClassName(), &#39;style&#39;: background1.selectedStyleLazy(), &#39;css&#39;:{&#39;lazy&#39;:true, &#39;lazy-background&#39;:true, image: background1.hasContent(), white: !background1.hasContent()}, &#39;attr&#39;: {&#39;data-background&#39;: background1.assetUrl()}" style="padding-top: 76px; background-image: url('./rawview_files/7.jpg'); background-size: cover; background-position: 49% 50%; background-repeat: no-repeat;" data-background="./rawview_files/7.jpg">
+
+<div class="container">
+<div class="sixteen columns clearfix media-wrapper" data-bind="visible: media1.hasContentOrIsEditMode()">
+<div class="media1 content"><div class="content">
+<div class="video-content" data-bind="visible: media1.showVideo()" style="display:none;">
+<div class="player" data-bind="html: media1.video.parent ? (media1.video.parent.showImage() ? &#39;&#39; : media1.video.html) : media1.video.html "></div>
+</div>
+<div class="image-content" data-bind="visible: media1.showImage()" style="">
+<a class="image-link" data-bind="if: media1.image.hasLink(), attr: { href: media1.image.link(), target: media1.image.target() }" href="javascript:void(0);" target="_self"></a>
+<span class="image-link" data-bind="ifnot: media1.image.hasLink()">
+<img alt="" data-bind="attr: { &#39;class&#39;: &#39;lazy lazy-img&#39;, &#39;data-original&#39;: media1.image.assetUrl, alt: media1.image.caption, title: media1.image.caption }" src="./rawview_files/monitor.png" class="lazy-img" title="" style="position: relative;">
+</span>
+</div>
+    
+ 
+</div>
+</div>
+</div>
+<div class="sixteen columns clearfix" data-bind="visible: text1.hasContentOrIsEditMode() || text2.hasContentOrIsEditMode()">
+<h1 class="heading center bottom-gap animated" data-bind="visible: text1.hasContentOrIsEditMode()" style="opacity: 1;">
+<div data-component="text" data-name="text1" data-text-type="title" class="text-component"><div class="content content2" data-bind="visible: !(text1.isState(&#39;editor&#39;) || !text1.hasContent()), htmlValue: text1.value, style: (window.edit_page.data.titleFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.titleFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div><span style="font-size: 130%;">入境</span></div></div></div>
+</h1>
+<h4 class="subtitle animated" data-bind="visible: text2.hasContentOrIsEditMode()" style="opacity: 1;">
+<div data-component="text" data-name="text2" data-text-type="heading" class="text-component"><div class="content content2" data-bind="visible: !(text2.isState(&#39;editor&#39;) || !text2.hasContent()), htmlValue: text2.value, style: (window.edit_page.data.headingFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.headingFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div><span style="font-size: 130%;">感受，一种从容的思维探索方式</span></div></div></div>
+</h4>
+</div>
+</div>
+</div>
+
+
+</li>
+<li class="slide odd">
+<a class="section-anchor" data-scroll-name="#2"></a>
+<a class="section-name-anchor" data-section-name="Feature Listing"></a>
+<div class="wide section column-listing odd">
+<div class="container" data-bind="visible: text1.hasContentOrIsEditMode() || text2.hasContentOrIsEditMode()">
+<div class="sixteen columns">
+<h2 class="heading center bottom-gap animated" data-bind="visible: text1.hasContentOrIsEditMode()" style="opacity: 1;">
+<div data-component="text" data-name="text1" data-text-type="title" class="text-component"><div class="content content2" data-bind="visible: !(text1.isState(&#39;editor&#39;) || !text1.hasContent()), htmlValue: text1.value, style: (window.edit_page.data.titleFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.titleFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div>"how to hack your brain?"</div></div></div>
+</h2>
+<h4 class="subtitle center bottom-double-gap animated" data-bind="visible: text2.hasContentOrIsEditMode()" style="opacity: 1;">
+<div data-component="text" data-name="text2" data-text-type="heading" class="text-component"><div class="content content2" data-bind="visible: !(text2.isState(&#39;editor&#39;) || !text2.hasContent()), htmlValue: text2.value, style: (window.edit_page.data.headingFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.headingFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><p style="text-align: left;">"You are not who you think you are. Your personality and identity is significantly more malleable than you realize. With a few simple tricks, you can exploit your brain's innate functionality to change just about anything about yourself. Here's how."---- snippet from lifehacker.com</p></div></div>
+</h4>
+</div>
+</div>
+<div class="container center clearfix s-mh" data-bind="css: { &#39;left-align&#39;: text1.isLeftAligned() &amp;&amp; text2.isLeftAligned(), &#39;right-align&#39;: text1.isRightAligned() &amp;&amp; text2.isRightAligned(), &#39;center-align&#39;: text1.isCenterAligned() &amp;&amp; text2.isCenterAligned() }">
+<div class="repeatable1 content repeatable-component ko_container ui-sortable" data-bind="sortableRepeatable: { template: &#39;column_block&#39;, data: repeatable1.list }"><div class="four columns repeatable no-float half-fixed" data-bind="mouseenter: mouseenterHandler, mouseleave: mouseleaveHandler">
+<div class="relative center">
+
+<div class="image ib s-mhi animated" data-component="image" data-name="components.image1" data-use-url="true" style="opacity: 1; height: 134px; line-height: 134px;"><div class="content content2" data-bind="fadeVisibleAndHide: !components.image1.isState(&#39;editor&#39;)" style="visibility: visible; opacity: 1; ">
+
+<a class="image-link" data-bind="if: components.image1.hasLink(), attr: { href: components.image1.link(), target: components.image1.target() }" href="javascript:void(0);" target="_blank"></a>
+<span class="image-link" data-bind="ifnot: components.image1.hasLink()">
+<img alt="" data-bind="attr: { &#39;class&#39;: &#39;lazy lazy-img&#39;, &#39;data-original&#39;: components.image1.assetUrl, alt: components.image1.caption, title: components.image1.caption }" src="./rawview_files/radio.png" class="lazy-img" data-original="http://assets.strikingly.com/static/icons/circle/radio.png" title="" style="position: relative; vertical-align: middle;">
+</span>
+
+</div></div>
+<div class="desc" data-bind="visible: components.text1.hasContentOrIsEditMode()">
+<div class="p body text-component animated" data-component="text" data-name="components.text1" data-text-type="body" data-use-font="true" style="opacity: 1;"><div class="content content2" data-bind="visible: !(components.text1.isState(&#39;editor&#39;) || !components.text1.hasContent()), htmlValue: components.text1.value, style: (window.edit_page.data.bodyFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.bodyFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div>闭目</div></div></div>
+</div>
+</div>
+</div><div class="four columns repeatable no-float half-fixed" data-bind="mouseenter: mouseenterHandler, mouseleave: mouseleaveHandler">
+<div class="relative center">
+
+<div class="image ib s-mhi animated" data-component="image" data-name="components.image1" data-use-url="true" style="opacity: 1; height: 134px; line-height: 134px;"><div class="content content2" data-bind="fadeVisibleAndHide: !components.image1.isState(&#39;editor&#39;)" style="visibility: visible; opacity: 1; ">
+
+<a class="image-link" data-bind="if: components.image1.hasLink(), attr: { href: components.image1.link(), target: components.image1.target() }" href="javascript:void(0);" target="_blank"></a>
+<span class="image-link" data-bind="ifnot: components.image1.hasLink()">
+<img alt="" data-bind="attr: { &#39;class&#39;: &#39;lazy lazy-img&#39;, &#39;data-original&#39;: components.image1.assetUrl, alt: components.image1.caption, title: components.image1.caption }" src="./rawview_files/radiotower.png" class="lazy-img" data-original="http://assets.strikingly.com/static/icons/circle/radiotower.png" title="" style="position: relative; vertical-align: middle;">
+</span>
+
+</div></div>
+<div class="desc" data-bind="visible: components.text1.hasContentOrIsEditMode()">
+<div class="p body text-component animated" data-component="text" data-name="components.text1" data-text-type="body" data-use-font="true" style="opacity: 1;"><div class="content content2" data-bind="visible: !(components.text1.isState(&#39;editor&#39;) || !components.text1.hasContent()), htmlValue: components.text1.value, style: (window.edit_page.data.bodyFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.bodyFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div>触意</div></div></div>
+</div>
+</div>
+</div><div class="four columns repeatable no-float half-fixed" data-bind="mouseenter: mouseenterHandler, mouseleave: mouseleaveHandler">
+<div class="relative center">
+
+<div class="image ib s-mhi animated" data-component="image" data-name="components.image1" data-use-url="true" style="opacity: 1; height: 134px; line-height: 134px;"><div class="content content2" data-bind="fadeVisibleAndHide: !components.image1.isState(&#39;editor&#39;)" style="visibility: visible; opacity: 1; ">
+
+<a class="image-link" data-bind="if: components.image1.hasLink(), attr: { href: components.image1.link(), target: components.image1.target() }" href="javascript:void(0);" target="_blank"></a>
+<span class="image-link" data-bind="ifnot: components.image1.hasLink()">
+<img alt="" data-bind="attr: { &#39;class&#39;: &#39;lazy lazy-img&#39;, &#39;data-original&#39;: components.image1.assetUrl, alt: components.image1.caption, title: components.image1.caption }" src="./rawview_files/recycle.png" class="lazy-img" data-original="http://assets.strikingly.com/static/icons/circle/recycle.png" title="" style="position: relative; vertical-align: middle;">
+</span>
+
+</div></div>
+<div class="desc" data-bind="visible: components.text1.hasContentOrIsEditMode()">
+<div class="p body text-component animated" data-component="text" data-name="components.text1" data-text-type="body" data-use-font="true" style="opacity: 1;"><div class="content content2" data-bind="visible: !(components.text1.isState(&#39;editor&#39;) || !components.text1.hasContent()), htmlValue: components.text1.value, style: (window.edit_page.data.bodyFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.bodyFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div>合掌</div></div></div>
+</div>
+</div>
+</div><div class="four columns repeatable no-float half-fixed" data-bind="mouseenter: mouseenterHandler, mouseleave: mouseleaveHandler">
+<div class="relative center">
+
+<div class="image ib s-mhi animated" data-component="image" data-name="components.image1" data-use-url="true" style="opacity: 1; height: 134px; line-height: 134px;"><div class="content content2" data-bind="fadeVisibleAndHide: !components.image1.isState(&#39;editor&#39;)" style="visibility: visible; opacity: 1; ">
+
+<a class="image-link" data-bind="if: components.image1.hasLink(), attr: { href: components.image1.link(), target: components.image1.target() }" href="javascript:void(0);" target="_blank"></a>
+<span class="image-link" data-bind="ifnot: components.image1.hasLink()">
+<img alt="" data-bind="attr: { &#39;class&#39;: &#39;lazy lazy-img&#39;, &#39;data-original&#39;: components.image1.assetUrl, alt: components.image1.caption, title: components.image1.caption }" src="./rawview_files/rainbow.png" class="lazy-img" data-original="http://assets.strikingly.com/static/icons/circle/rainbow.png" title="" style="position: relative; vertical-align: middle;">
+</span>
+
+</div></div>
+<div class="desc" data-bind="visible: components.text1.hasContentOrIsEditMode()">
+<div class="p body text-component animated" data-component="text" data-name="components.text1" data-text-type="body" data-use-font="true" style="opacity: 1;"><div class="content content2" data-bind="visible: !(components.text1.isState(&#39;editor&#39;) || !components.text1.hasContent()), htmlValue: components.text1.value, style: (window.edit_page.data.bodyFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.bodyFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div>缓息</div></div></div>
+</div>
+</div>
+</div></div>
+</div>
+
+</div>
+
+
+<div class="dummy-shadow"></div></li>
+<li class="slide even">
+<a class="section-anchor" data-scroll-name="#3"></a>
+<a class="section-name-anchor" data-section-name="Projects"></a>
+<div class="wide section features listing even">
+<div class="container" data-bind="visible: text1.hasContentOrIsEditMode() || text2.hasContentOrIsEditMode()">
+<div class="sixteen columns">
+<h2 class="heading center bottom-gap animated" data-bind="visible: text1.hasContentOrIsEditMode()" style="opacity: 1;">
+<div data-component="text" data-name="text1" data-text-type="title" class="text-component"><div class="content content2" data-bind="visible: !(text1.isState(&#39;editor&#39;) || !text1.hasContent()), htmlValue: text1.value, style: (window.edit_page.data.titleFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.titleFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div><span style="font-size: 60%;">启发问题：容易触及的<strong>高效能状态</strong>技巧？</span></div></div></div>
+</h2>
+<h4 class="subtitle bottom-gap animated" data-bind="visible: text2.hasContentOrIsEditMode()" style="opacity: 1;">
+<div data-component="text" data-name="text2" data-text-type="heading" class="text-component"><div class="content content2" data-bind="visible: !(text2.isState(&#39;editor&#39;) || !text2.hasContent()), htmlValue: text2.value, style: (window.edit_page.data.headingFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.headingFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div>the state of high performance</div></div></div>
+</h4>
+</div>
+</div>
+<div class="container clearfix">
+<div class="sixteen columns">
+<br>
+<div class="repeatable1 content repeatable-component ko_container ui-sortable" data-bind="sortableRepeatable: { template: &#39;feature_listing_box&#39;, data: repeatable1.list }"><div class="row clearfix repeatable" data-bind="mouseenter: mouseenterHandler, mouseleave: mouseleaveHandler">
+
+<div class="four columns omega illus center right animated" data-bind="visible: components.image1.hasContentOrIsEditMode()" style="opacity: 1;">
+<div class="image ib br" data-asset-type="flat-circle-160-free" data-component="image" data-name="components.image1" data-use-url="true"><div class="content content2" data-bind="fadeVisibleAndHide: !components.image1.isState(&#39;editor&#39;)" style="visibility: visible; opacity: 1; ">
+
+<a class="image-link" data-bind="if: components.image1.hasLink(), attr: { href: components.image1.link(), target: components.image1.target() }" href="javascript:void(0);" target="_self"></a>
+<span class="image-link" data-bind="ifnot: components.image1.hasLink()">
+<img alt="" data-bind="attr: { &#39;class&#39;: &#39;lazy lazy-img&#39;, &#39;data-original&#39;: components.image1.assetUrl, alt: components.image1.caption, title: components.image1.caption }" src="./rawview_files/44.png" class="lazy-img" data-original="http://assets.strikingly.com/static/icons/flat-circle-160/44.png" title="" style="position: relative;">
+</span>
+
+</div></div>
+</div>
+<div class="twelve columns alpha right">
+<div data-bind="visible: components.text1.hasContentOrIsEditMode()">
+<h2 class="heading text-component animated" data-component="text" data-name="components.text1" data-text-type="title" data-use-font="true" style="opacity: 1;"><div class="content content2" data-bind="visible: !(components.text1.isState(&#39;editor&#39;) || !components.text1.hasContent()), htmlValue: components.text1.value, style: (window.edit_page.data.titleFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.titleFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div>间隙冥想</div></div></h2>
+</div>
+<div data-bind="visible: components.text2.hasContentOrIsEditMode()">
+<div class="p body half-offset-right text-component animated" data-component="text" data-name="components.text2" data-text-type="body" data-use-font="true" style="opacity: 1;"><div class="content content2" data-bind="visible: !(components.text2.isState(&#39;editor&#39;) || !components.text2.hasContent()), htmlValue: components.text2.value, style: (window.edit_page.data.bodyFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.bodyFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><ul>
+<li><span style="font-size: 100%;">我们触发NewTab的单位频次，一般与我们遇到的问题复杂度成正比。</span></li>
+<li><span style="font-size: 100%;">难题困惑时，急进地NewTab搜索，低效无功。然而，却在洗澡、散步状态下易得启发。&nbsp;</span></li>
+<li><span style="font-size: 100%;">受此启发，入境plugin，在适当时将提供一段适合冥想的白噪声与背景。</span></li>
+</ul>
+<div><span style="font-size: 100%;">“闭目，触意。合掌，缓息”，这是入境plugin的灵魂。这种间隙冥想，会让大脑的能量输出，有节奏，有效力。</span></div></div></div>
+</div>
+</div>
+</div><div class="row clearfix repeatable" data-bind="mouseenter: mouseenterHandler, mouseleave: mouseleaveHandler">
+
+<div class="four columns omega illus center right animated" data-bind="visible: components.image1.hasContentOrIsEditMode()" style="opacity: 1;">
+<div class="image ib br" data-asset-type="flat-circle-160-free" data-component="image" data-name="components.image1" data-use-url="true"><div class="content content2" data-bind="fadeVisibleAndHide: !components.image1.isState(&#39;editor&#39;)" style="visibility: visible; opacity: 1; ">
+
+<a class="image-link" data-bind="if: components.image1.hasLink(), attr: { href: components.image1.link(), target: components.image1.target() }" href="javascript:void(0);" target="_self"></a>
+<span class="image-link" data-bind="ifnot: components.image1.hasLink()">
+<img alt="" data-bind="attr: { &#39;class&#39;: &#39;lazy lazy-img&#39;, &#39;data-original&#39;: components.image1.assetUrl, alt: components.image1.caption, title: components.image1.caption }" src="./rawview_files/172.png" class="lazy-img" data-original="http://assets.strikingly.com/static/icons/flat-circle-160/172.png" title="" style="position: relative;">
+</span>
+
+</div></div>
+</div>
+<div class="twelve columns alpha right">
+<div data-bind="visible: components.text1.hasContentOrIsEditMode()">
+<h2 class="heading text-component animated" data-component="text" data-name="components.text1" data-text-type="title" data-use-font="true" style="opacity: 1;"><div class="content content2" data-bind="visible: !(components.text1.isState(&#39;editor&#39;) || !components.text1.hasContent()), htmlValue: components.text1.value, style: (window.edit_page.data.titleFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.titleFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div>番茄计时</div></div></h2>
+</div>
+<div data-bind="visible: components.text2.hasContentOrIsEditMode()">
+<div class="p body half-offset-right text-component animated" data-component="text" data-name="components.text2" data-text-type="body" data-use-font="true" style="opacity: 1;"><div class="content content2" data-bind="visible: !(components.text2.isState(&#39;editor&#39;) || !components.text2.hasContent()), htmlValue: components.text2.value, style: (window.edit_page.data.bodyFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.bodyFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div style="text-align: left;"><span style="font-size: 100%;">倒计时的番茄小闹钟。番茄25min计时，集中专注时间来解决关键任务。</span></div>
+<div style="text-align: left;">
+<ul>
+<li>追踪与回顾，“吃掉”的番茄数量。(可选云同步)</li>
+</ul>
+<div>&nbsp;慢性地形成良好习惯，最珍贵的其实是个人的坚持力。如果已经能够轻松地过滤掉冗余时间黑洞，那就无所谓番茄还是西瓜了。</div>
+</div>
+<div style="text-align: left;">&nbsp;</div></div></div>
+</div>
+</div>
+</div><div class="row clearfix repeatable" data-bind="mouseenter: mouseenterHandler, mouseleave: mouseleaveHandler">
+
+<div class="four columns omega illus center right animated" data-bind="visible: components.image1.hasContentOrIsEditMode()" style="opacity: 1;">
+<div class="image ib br" data-asset-type="flat-circle-160-free" data-component="image" data-name="components.image1" data-use-url="true"><div class="content content2" data-bind="fadeVisibleAndHide: !components.image1.isState(&#39;editor&#39;)" style="visibility: visible; opacity: 1; ">
+
+<a class="image-link" data-bind="if: components.image1.hasLink(), attr: { href: components.image1.link(), target: components.image1.target() }" href="javascript:void(0);" target="_self"></a>
+<span class="image-link" data-bind="ifnot: components.image1.hasLink()">
+<img alt="" data-bind="attr: { &#39;class&#39;: &#39;lazy lazy-img&#39;, &#39;data-original&#39;: components.image1.assetUrl, alt: components.image1.caption, title: components.image1.caption }" src="./rawview_files/52.png" class="lazy-img" data-original="http://assets.strikingly.com/static/icons/flat-circle-160/52.png" title="" style="position: relative;">
+</span>
+
+</div></div>
+</div>
+<div class="twelve columns alpha right">
+<div data-bind="visible: components.text1.hasContentOrIsEditMode()">
+<h2 class="heading text-component animated" data-component="text" data-name="components.text1" data-text-type="title" data-use-font="true" style="opacity: 1;"><div class="content content2" data-bind="visible: !(components.text1.isState(&#39;editor&#39;) || !components.text1.hasContent()), htmlValue: components.text1.value, style: (window.edit_page.data.titleFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.titleFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div>任务列表</div></div></h2>
+</div>
+<div data-bind="visible: components.text2.hasContentOrIsEditMode()">
+<div class="p body half-offset-right text-component animated" data-component="text" data-name="components.text2" data-text-type="body" data-use-font="true" style="opacity: 1;"><div class="content content2" data-bind="visible: !(components.text2.isState(&#39;editor&#39;) || !components.text2.hasContent()), htmlValue: components.text2.value, style: (window.edit_page.data.bodyFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.bodyFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div>简洁的todo list。有效的用好“番茄时钟+当日任务列表”，轻松平衡工作和生活。</div>
+<ul>
+<li>当日任务列表。</li>
+<li>有限个数的倒数日。</li>
+</ul>
+<div>入境plugin的期待是，启发未来的“工作时限自由化”。未来的IT团队协作通过workDash，形成更可视化的信赖关系，工作地点、工作时间不限。</div></div></div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+
+</div>
+
+
+</li>
+<li class="slide odd">
+<a class="section-anchor" data-scroll-name="#4"></a>
+<a class="section-name-anchor" data-section-name="Large Media"></a>
+<div class="wide section media odd">
+<div class="container">
+<div class="sixteen columns">
+<div data-bind="visible: text1.hasContentOrIsEditMode() || text2.hasContentOrIsEditMode()">
+<h1 class="heading center" data-bind="visible: text1.hasContentOrIsEditMode()">
+<div data-component="text" data-name="text1" data-text-type="title" class="text-component"><div class="content content2" data-bind="visible: !(text1.isState(&#39;editor&#39;) || !text1.hasContent()), htmlValue: text1.value, style: (window.edit_page.data.titleFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.titleFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div>"入境"的小故事</div></div></div>
+</h1>
+<h4 class="subtitle" data-bind="visible: text2.hasContentOrIsEditMode()">
+<div data-component="text" data-name="text2" data-text-type="heading" class="text-component"><div class="content content2" data-bind="visible: !(text2.isState(&#39;editor&#39;) || !text2.hasContent()), htmlValue: text2.value, style: (window.edit_page.data.headingFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.headingFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div><span style="font-size: 80%;">Explore Pure Passion: &nbsp;Meditation, Headspace, Yoga, Cognitive-Enhancement , Inspiring-Creativity, Life-Hacking, Energy-Manager,&nbsp;Mind-Tricks, Religious-Experience,Stay-Focused &amp; Feel-Great.</span></div></div></div>
+</h4>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="repeatable1 content repeatable-component ko_container ui-sortable" data-bind="sortableRepeatable: { template: &#39;mediaBlockTemplate&#39;, data: repeatable1.list }"><div class="row repeatable animated" data-bind="mouseenter: mouseenterHandler, mouseleave: mouseleaveHandler" style="opacity: 1;">
+
+<div class="sixteen columns">
+<div class="br"><div class="components.media1 content"><div class="content">
+<div class="video-content" data-bind="visible: components.media1.showVideo()" style="display:none;">
+<div class="player" data-bind="html: components.media1.video.parent ? (components.media1.video.parent.showImage() ? &#39;&#39; : components.media1.video.html) : components.media1.video.html "></div>
+</div>
+<div class="image-content" data-bind="visible: components.media1.showImage()" style="">
+<a class="image-link" data-bind="if: components.media1.image.hasLink(), attr: { href: components.media1.image.link(), target: components.media1.image.target() }" href="javascript:void(0);" target="_blank"></a>
+<span class="image-link" data-bind="ifnot: components.media1.image.hasLink()">
+<img data-bind="attr: { &#39;class&#39;: &#39;lazy lazy-img&#39;, &#39;data-original&#39;: components.media1.image.assetUrl, alt: components.media1.image.caption, title: components.media1.image.caption }" src="./rawview_files/dali3.png" class="lazy-img" alt="" title="" style="position: relative;">
+</span>
+</div>
+</div>
+</div></div>
+<h2 class="body text-component" data-component="text" data-name="components.text1" data-text-type="body" data-use-font="true"><div class="content content2" data-bind="visible: !(components.text1.isState(&#39;editor&#39;) || !components.text1.hasContent()), htmlValue: components.text1.value, style: (window.edit_page.data.bodyFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.bodyFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp;入境plugin的作者，对上方副标题的每一个tag，应该都搜索不下一百次了吧。客观原因是，个人对宗教哲学实践有很大痴迷，这些能让我看到宏大而绚丽的景象，感受到震慑心灵的美好存在物件。当然，除此之外，我也没啥事了O(∩_∩)O~。</div>
+<div>&nbsp;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp;在一个偶然的机会，用了一个chrome 插件momentum有半年多。回头一看，突然很是惊讶，我的工作效率不止提升了一点( ⊙ o ⊙ )啊！，而是似乎提升了30%到50%。这股兴奋和喜悦，让我大脑处于高烧状态足足三天多，简单得了如下三个思考结点。而“入境plugin”就是第三思考结点的启发产物。</div>
+<div>&nbsp;</div>
+<ul>
+<li>追求美好的感受</li>
+</ul>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; 一切美妙的感受，例如“夜卧草原，仰视星空”，“坐观山雨，飞来云雾”，“苍山水波，夏日蝉鸣”。这些实际上就是美学提出时所探究的，是什么缘故能够让人产生“美”的感受。这就是“美学”的范畴。大学一般开设的美学课，多数故作高雅地宏篇大论文艺复兴的作品，这实际上是个次序错乱的事。对于自然世界的美好，大家的感受基本感受到一块。但是对于人类文明艺术品，感受基于历史认同感所以就千差万别了。感受具有润物细无声的特点，所以长时间的积累感受力是一项意义深刻的工程。</div>
+<ul>
+<li>心智&amp;精神的训练</li>
+</ul>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; 基础教育主要面向智力的提升。但是更软性层面的智慧，受此作用应该是非常有限。智慧力的提升，个人冒昧地总结了几个点，暂做参考。一是，有更清晰的意识感受大脑能量状态运转。二是，不局限语言地领会宗教哲学的概念。三是，“空无念想状态”与“进取性思考”占比均衡健康。当然，就算有人穷尽一生进行智慧力的训练，也未必见得有明显提升。这里面估计有更为久远的天性起作用。说这么多，简单表达一句通俗白话，就是“冥想对智慧力提升很有效”，人们只是太习惯急躁时，急功近利地“进取性思考”，忽略了冥想（空无念想状态）的珍贵作用。</div>
+<ul>
+<li>&nbsp;复杂推演凝聚简单</li>
+</ul>
+</div>
+<div><span style="font-size: 100%;">&nbsp; &nbsp; &nbsp; &nbsp; 有兴趣的同学可以探索副标题中每一个tag，相信会发现老外在这方面有很多新奇有趣的结论和实践。这些概念多是复杂深奥，似是而非，模棱两可的情况。人们还不太愿意承认，其实看清复杂存在事物只需要简单的处在“无想”状态即可。对于普通职场人士，工作生活遇到的难题应该不会有超过哲学悖论中要死要活的问题吧。</span></div>
+<div><span style="font-size: 100%;">&nbsp; &nbsp; &nbsp; &nbsp; 入境，就想做个帮助人们简单工作，轻松生活的轻量产品。大概是，“入境plugin”每日精选展示一张视野开放的风景图，加上一段与之匹配的自然白噪声，一段无意识形态的风景描绘语句。仅此即可。</span></div>
+<div><span style="font-size: 100%;">&nbsp;</span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 100%;">&nbsp; 启发“入境plugin”产生的相关资料：</span></div>
+<div><ol>
+<li><span style="font-size: 100%;">reach the state of high performance &nbsp;. &nbsp;<a href="http://www.bulletproofexec.com/" target="_blank">www.bulletproofexec.com</a></span></li>
+<li><span style="font-size: 100%;">idea and cultrue. &nbsp;<a href="http://aeon.co/magazine/" target="_blank">aeon.co/magazine</a> (ps: 一个充满哲学敬畏和探索人类自由的网络杂志, 由Hains夫妇在全球旅行时得到灵感而创建。《万古杂志》)</span></li>
+<li><span style="font-size: 100%;">Treat Your Head Right.&nbsp;&nbsp;<a href="http://www.headspace.com/" target="_blank">www.headspace.com</a></span></li>
+<li><span style="font-size: 100%;">Start, run &amp; grow your business . &nbsp;&nbsp;<a href="http://www.entrepreneur.com/" target="_blank">www.entrepreneur.com</a></span></li>
+</ol></div></div></h2>
+</div>
+</div></div>
+</div>
+
+</div>
+
+
+<div class="dummy-shadow"></div></li>
+<li class="slide even">
+<a class="section-anchor" data-scroll-name="#5"></a>
+<a class="section-name-anchor" data-section-name="Action"></a>
+<div class="wide section action strikingly-light-text lazy-background image even" data-bind="&#39;className&#39;: background1.getSelectedClassName(), &#39;style&#39;: background1.selectedStyleLazy(), &#39;css&#39;:{&#39;lazy&#39;:true, &#39;lazy-background&#39;:true, image: background1.hasContent()}, &#39;attr&#39;: {&#39;data-background&#39;: background1.assetUrl()}" style="background-image: url(http://uploads.striking.ly/page/images/backgrounds/bg6.jpg); background-size: cover; background-position: 49% 50%; background-repeat: no-repeat;" data-background="http://uploads.striking.ly/page/images/backgrounds/bg6.jpg">
+
+<div class="container">
+<div class="sixteen columns">
+<h2 class="heading center bottom-gap animated" data-bind="visible: text1.hasContentOrIsEditMode()" style="opacity: 1;">
+<div data-component="text" data-name="text1" data-text-type="title" class="text-component"><div class="content content2" data-bind="visible: !(text1.isState(&#39;editor&#39;) || !text1.hasContent()), htmlValue: text1.value, style: (window.edit_page.data.titleFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.titleFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div><span style="font-size: 80%;">RawView on&nbsp;NewTab</span></div></div></div>
+</h2>
+<h4 class="body animated" data-bind="visible: text2.hasContentOrIsEditMode()" style="opacity: 1;">
+<div data-component="text" data-name="text2" data-text-type="body" class="text-component"><div class="content content2" data-bind="visible: !(text2.isState(&#39;editor&#39;) || !text2.hasContent()), htmlValue: text2.value, style: (window.edit_page.data.bodyFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.bodyFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div style="text-align: center;">入境，虽仅是一个浏览器NewTab插件，却蕴含着意料之外的想象力和灵感。</div></div></div>
+</h4>
+<div class="clearfix center" data-bind="css: { &#39;left-align&#39;: text1.isLeftAligned() &amp;&amp; text2.isLeftAligned(), &#39;right-align&#39;: text1.isRightAligned() &amp;&amp; text2.isRightAligned(), &#39;center-align&#39;: text1.isCenterAligned() &amp;&amp; text2.isCenterAligned() }">
+<div class="button-container animated" style="opacity: 1;">
+<div class="button1 content"><a class="button-component" data-bind="attr: { href: button1.url, target: button1.target() }, text: button1.text, visible: button1.hasContent()" data-component="button" href="http://www.egs-studio.com/RawView" target="_blank">即将上线...</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</li>
+<li class="slide odd">
+<a class="section-anchor" data-scroll-name="#6"></a>
+<a class="section-name-anchor" data-section-name="Contacts"></a>
+<div class="wide section column-listing odd">
+<div class="container" data-bind="visible: text1.hasContentOrIsEditMode() || text2.hasContentOrIsEditMode()">
+<div class="sixteen columns">
+<h2 class="heading center bottom-gap animated" data-bind="visible: text1.hasContentOrIsEditMode()" style="opacity: 1;">
+<div data-component="text" data-name="text1" data-text-type="title" class="text-component"><div class="content content2" data-bind="visible: !(text1.isState(&#39;editor&#39;) || !text1.hasContent()), htmlValue: text1.value, style: (window.edit_page.data.titleFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.titleFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div>Join in us</div></div></div>
+</h2>
+<h4 class="subtitle center bottom-double-gap animated" data-bind="visible: text2.hasContentOrIsEditMode()" style="opacity: 1;">
+<div data-component="text" data-name="text2" data-text-type="heading" class="text-component"><div class="content content2" data-bind="visible: !(text2.isState(&#39;editor&#39;) || !text2.hasContent()), htmlValue: text2.value, style: (window.edit_page.data.headingFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.headingFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div>有想法的设计师，有追求的工程师，都可以成为我们的伙伴。</div></div></div>
+</h4>
+</div>
+</div>
+<div class="container center clearfix s-mh" data-bind="css: { &#39;left-align&#39;: text1.isLeftAligned() &amp;&amp; text2.isLeftAligned(), &#39;right-align&#39;: text1.isRightAligned() &amp;&amp; text2.isRightAligned(), &#39;center-align&#39;: text1.isCenterAligned() &amp;&amp; text2.isCenterAligned() }">
+<div class="repeatable1 content repeatable-component ko_container ui-sortable" data-bind="sortableRepeatable: { template: &#39;column_block&#39;, data: repeatable1.list }"><div class="four columns repeatable no-float half-fixed" data-bind="mouseenter: mouseenterHandler, mouseleave: mouseleaveHandler">
+<div class="relative center">
+
+<div class="image ib s-mhi animated" data-component="image" data-name="components.image1" data-use-url="true" style="opacity: 1; height: auto;"><div class="content content2" data-bind="fadeVisibleAndHide: !components.image1.isState(&#39;editor&#39;)" style="visibility: visible; opacity: 1; ">
+
+<a class="image-link" data-bind="if: components.image1.hasLink(), attr: { href: components.image1.link(), target: components.image1.target() }" href="mailto:limbo0312@foxmail.com" target="_blank">
+<img alt="" data-bind="attr: { &#39;class&#39;: &#39;lazy lazy-img&#39;, &#39;data-original&#39;: components.image1.assetUrl, alt: components.image1.caption, title: components.image1.caption }" src="./rawview_files/email-icon.png" class="lazy-img" title="" style="position: relative;">
+</a>
+<span class="image-link" data-bind="ifnot: components.image1.hasLink()"></span>
+
+</div></div>
+<div class="desc" data-bind="visible: components.text1.hasContentOrIsEditMode()">
+<div class="p body text-component animated" data-component="text" data-name="components.text1" data-text-type="body" data-use-font="true" style="opacity: 1;"><div class="content content2" data-bind="visible: !(components.text1.isState(&#39;editor&#39;) || !components.text1.hasContent()), htmlValue: components.text1.value, style: (window.edit_page.data.bodyFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.bodyFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div>mail chat</div></div></div>
+</div>
+</div>
+</div></div>
+</div>
+
+</div>
+
+
+<div class="dummy-shadow"></div></li>
+</ul>
+
+<div data-bind="with: data.footer" id="strikingly-footer">
+<div class="wide section footer darken even" data-bind="visible: $root.data.showFooter" id="footer">
+<div class="container">
+<div class="row sixteen columns center">
+<div class="footer-icons center" id="footer-social-media">
+<div class="socialMedia content"><div class="social-media-display">
+<ul class="links" data-bind="template: {name:&#39;socialMediaLinks&#39;, foreach: socialMedia.link_list, as: &#39;link&#39; }, runWhenBound: socialMedia.render" style="clear:both;"></ul>
+<ul class="buttons" data-bind="html: socialMedia.mediaListHtml"></ul>
+</div>
+</div>
+</div>
+<div class="footer-text" id="footer-text">
+<div class="p body"><div data-component="text" data-name="copyright" data-text-type="body" class="text-component"><div class="content content2" data-bind="visible: !(copyright.isState(&#39;editor&#39;) || !copyright.hasContent()), htmlValue: copyright.value, style: (window.edit_page.data.bodyFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.bodyFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: inherit; "><div>CopyRight @2014 &nbsp; www.egs-Studio.com</div></div></div></div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+ 
+
+ 
+
+ 
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ==================== -->
+<!-- = Content Partials = -->
+<!-- ==================== -->
+
+
+
+<div id="fb-root"></div>
+
+
+
+<script phantom="keep" src="./rawview_files/show_init-4a4fedb9f0395b51d59e868672913b05.js" type="text/javascript"></script>
+
+<div class="image-share s-page-layer fill">
+<div class="s-page-shade fill"></div>
+<div class="s-page-wrapper">
+<div class="s-page-content">
+<iframe frameborder="0" id="s-image-share-iframe" marginheight="0" marginwidth="0" src=""></iframe>
+</div>
+</div>
+</div>
+
+<iframe name="strk-tracking" id="strk-tracking" src="./rawview_files/ping.html"></iframe>
+<div id="GWDANG_HAS_BUILT"></div><audio id="vocapp-audio-dummy" preload="auto"></audio><script src="./rawview_files/nr-476.min.js"></script><script type="text/javascript" src="./rawview_files/74f55de04c"></script><script src="./rawview_files/nr-476.min(1).js"></script><script type="text/javascript" src="./rawview_files/74f55de04c(1)"></script></body></html>

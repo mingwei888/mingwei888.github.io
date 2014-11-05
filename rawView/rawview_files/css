@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>fonts.googleapis.com: Failed to load page: The server does not respond at all.</title>
+<style type='text/css'>
+body {
+font-family: Lucida Grande, Sans-Serif;
+}
+
+#Box {
+position: relative;
+padding: 10px;
+min-height: 90px;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 49px;
+border: 1px solid #999;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+#Logo {
+position: absolute;
+top: 11px;
+left: 7px;
+width: 90px;
+height: 90px;
+margin-right: 12px;
+}
+
+#Title {
+color: #888;
+font-size: 25px;
+font-weight: bold;
+padding-bottom: 0px;
+margin-top: 7px;
+margin-bottom: 10px;
+margin-left: 93px;
+}
+
+#Message {
+min-height: 23px;
+padding-right: 23px;
+margin-left: 93px;
+font-size: 13px;
+}
+
+#SuggestionContainer {
+position: relative;
+padding: 10px;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 55px;
+border: 1px solid #999999;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+#SuggestionContainer form {
+text-align: center;
+margin-bottom: 8px;
+}
+
+.SuggestionPrompt {
+color: #888888;
+padding-bottom: 0px;
+margin-top: 6px;
+margin-bottom: 18px;
+text-align: center;
+font-size: 13px;
+}
+
+#SuggestionContainer form input {
+font-size: 70%;
+}
+
+body[class~="WebKit"] #SuggestionContainer form input {
+font-size: 16px;
+}
+
+body[class~="WebKit"] #SuggestionContainer form input[type="submit"] {
+display: none;
+}
+
+#OtherTools {
+margin-top: 2em;
+text-align: center;
+font-size: 13px;
+color: #888888;
+}
+
+#OtherTools a, #OtherTools a:visited {
+color: #77b;
+}
+</style>
+</head>
+<body class='WebKit'>
+<div id=Box>
+<img id=Logo src='http://127.0.0.1:8228/=gb=/-public-/logo/large.png'>
+<div id=Title>The server does not respond at all.</div>
+<div id=Message>Try again a bit later.</div>
+</div>
+<div id=SuggestionContainer>
+<div class=SuggestionPrompt>You can use Google to search the web for this text.</div>
+<form action='http://www.google.com/search' method=GET>
+<input name=q placeholder=Google results=0 size=30 type=search value='fonts.googleapis.com'>
+<input name=ie type=hidden value=utf-8>
+<input name=oe type=hidden value=utf-8>
+<input type=submit value=search>
+</form>
+<div id=OtherTools>
+<div>
+or you can try viewing the page using:<br>
+<a href='http://www.google.com/search?q=cache:http%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAbril%2BFatface%7COpen%2BSans%3A300italic%2C600italic%2C300%2C600%7CQuando%7CJosefin%2BSlab%3A400%2C700%2C400italic%2C700italic%7CTrocchi%7CArvo%7CLato%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CRaleway%3A200%2C300%2C700%7CPlayfair%2BDisplay%3A400%2C700%2C400italic%2C700italic%7CBitter%3A400%2C700%2C400italic%7CVollkorn%3A400%2C400italic%7CTitillium%2BWeb%7CEB%2BGaramond%26subset%3Dlatin%2Clatin-ext'>Google cache</a>,&nbsp;
+<a href='http://fonts.googleapis.com.nyud.net:8080/css'>Coral cache</a>,
+or
+the <a href='http://web.archive.org/web/*/http://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300italic,600italic,300,600|Quando|Josefin+Slab:400,700,400italic,700italic|Trocchi|Arvo|Lato:300,400,700,300italic,400italic,700italic|Raleway:200,300,700|Playfair+Display:400,700,400italic,700italic|Bitter:400,700,400italic|Vollkorn:400,400italic|Titillium+Web|EB+Garamond&amp;subset=latin,latin-ext'>Wayback machine</a>.
+</div>
+<div style='margin-top: 1em;'>
+View <a href='http://whois.domaintools.com/fonts.googleapis.com'>WhoIs records</a> for the domain.
+<a href='http://private.dnsstuff.com/tools/tracert.ch?ip=fonts.googleapis.com'>Traceroute</a>.
+</div>
+<div style='margin-top: 1em;'>
+<a href='http://www.downforeveryoneorjustme.com/fonts.googleapis.com'>Down for every one or just me?</a>
+</div>
+</div>
+</div>
+</body>
+</html>
