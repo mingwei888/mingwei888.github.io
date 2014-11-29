@@ -32,26 +32,52 @@
 <link rel="icon" href="http://limbo0312.github.io/siteHelper/egs-studio.com/favicon.ico" mce_href="http://limbo0312.github.io/siteHelper/egs-studio.com/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="http://limbo0312.github.io/siteHelper/egs-studio.com/favicon.ico" ce_href="http://limbo0312.github.io/siteHelper/egs-studio.com/favicon.ico" type="image/x-icon">
     
+<style>
+
+h1,h2  {
+	color: #fff;
+	font-size: 2.5rem;
+	font-weight: 300;
+	letter-spacing: 0.08em;
+	margin: 0;
+	width: 100%;
+	text-shadow: 0 0 8px #fff;
+}	
+#footerCopyright p {
+	color: #333;
+	font-size: 45;
+	font-weight: 300;
+	letter-spacing: 0.08em;
+	margin: 0;
+	width: 100%;
+	text-shadow: 0 0 1px #333;
+}
+
+</style>
+
 </head>
 <body class="home">
   <div id="container">
+    
     <header class="clearfix">
-<!--      <a href="#footnav" class="gotonav">+</a>-->
       <a href="index.html" class="identity current" title="Egs-Studio">Egs-Studio</a>
       <nav>
         <ul>
-	  <!--<li><a style="color:#00AED7 !important;" href="careers/index.html" title="Careers">Careers</a></li> -->
         </ul>
       </nav>
       
     </header>
-      <div id="hero">
-        <h1>Explore Pure Passion</h1>
-        <h2>锻造极致"工具"</h2>
-        
-      </div><!--! /#hero -->
+    
+	  <div id="hero">
+	    
+	    <h1>Explore Pure Passion</h1>
+	    
+	    <h2>锻造极致"工具"</h2>
+	     <canvas id="galaxy"></canvas>
+	  </div><!--! /#hero -->
+      
     <div id="main" role="main" class="clearfix">
-
+      
       
       <section class="intro clearfix">
         <div class="limiter">
@@ -103,61 +129,162 @@
           <div class="service clearfix">
             <a href="mailto:limbo0312@foxmail.com" title="limbo0312@foxmail.com" class="home-cta" >Mail Chat</a>
           </div>
-        </section><!--! /#services -->
-      </div><!--! /.serviceswrap -->
+        </section> 
+      </div> 
       
-    </div><!--! /#main -->
-  </div> <!--! /#container -->
-  <footer class="clearfix">
-<!--
-    <nav id="footnav">
-              <ul>
-          <li><a href="about/index.html" title="About">About</a></li>
-          <li><a href="method/index.html" title="Method">Method</a></li>
-          <li><a href="work/index.html" title="Work">Work</a></li>
-          <li><a href="contact/index.html" title="Contact">Contact</a></li>
-          <li><a href="http://blog.builtwithmomentum.com" title="Blog">Blog</a></li>
-	  <li><a style="color:#00AED7 !important;" href="careers/index.html" title="Careers">Careers</a></li> 
-        </ul>
-    </nav>
--->
+    </div> 
+  </div>  
+  <footer id="footerCopyright" class="clearfix">
+ 
     <p>&copy; 2014 Egs-Studio  ==> Stay Peace , Stay Diligence</p>
-<!--
-    <div>
-      We support: 
-      <a href="http://openroad.org.uk"><img src="themes/site_themes/momentum/sponsors/openroad-logo.png" alt="Openroad Logo"></a>
-      <a href="http://firstsite.uk.net"><img src="themes/site_themes/momentum/sponsors/firstsite-logo.png" alt="Firstsite Logo"></a>
-    </div>
--->
+ 
   </footer>
 
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+  
+  <script>
+  window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')
+  </script>
 
   <script defer src="js/plugins.js"></script>
   <script defer src="js/script.js"></script>
+
   <script>
+/*
     $(document).ready(function(){
 //testThing();
       $(".videoplayer").fitVids();
+ 
+      
+
     });
-  </script>
-<!-- Google analytics -->
-<script type="text/javascript">
+*/
+    
+/*========begin new js add    */
+    var WIDTH, HEIGHT, canvas, con, g;
+var pxs = [];
+var rint = 50;
+$(document).ready(function() {
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-20724621-1']);
-  _gaq.push(['_trackPageview']);
+    $('.get-year').text(new Date().getFullYear());
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var $clones = $(".testimonial-list li").clone().sort(function() {
+        return 0.5 - Math.random();
+    }).slice(0, 4).removeClass("hidden");
 
-</script>
+    $(".testimonial-list").empty().append($clones);
+
+    var windowSize = function() {
+        WIDTH = $('#hero').innerWidth();
+        HEIGHT = $('#hero').innerHeight();
+        canvas = $('#galaxy');
+        canvas.attr('width', WIDTH).attr('height', HEIGHT*2);
+    };
+
+    windowSize();
+
+    $(window).resize(function() {
+        windowSize();
+    });
+
+    $('.navburger').on("click",
+    function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleMobileMenu();
+    });
+    $('.page-wrap').on("click",
+    function(e) {
+        if ($(this).hasClass('show-mobile')) {
+            e.preventDefault();
+            toggleMobileMenu();
+        }
+    });
+
+    function toggleMobileMenu() {
+        $('.page-wrap').toggleClass('show-mobile');
+        $('html, body').toggleClass('no-scroll');
+    }
+    con = canvas[0].getContext('2d');
+    for (var i = 0; i < 100; i++) {
+        pxs[i] = new Circle();
+        pxs[i].reset();
+    }
+    requestAnimationFrame(draw);
+});
+
+function draw() {
+    con.clearRect(0, 0, WIDTH, HEIGHT);
+    con.globalCompositeOperation = "lighter";
+    for (var i = 0; i < pxs.length; i++) {
+        pxs[i].fade();
+        pxs[i].move();
+        pxs[i].draw();
+    }
+    requestAnimationFrame(draw);
+}
+function Circle() {
+    this.s = {
+        ttl: 15000,
+        xmax: 5,
+        ymax: 2,
+        rmax: 7,
+        rt: 1,
+        xdef: 960,
+        ydef: 540,
+        xdrift: 4,
+        ydrift: 4,
+        random: true,
+        blink: true
+    };
+    this.reset = function() {
+        this.x = (this.s.random ? WIDTH * Math.random() : this.s.xdef);
+        this.y = (this.s.random ? HEIGHT * Math.random() : this.s.ydef);
+        this.r = ((this.s.rmax - 1) * Math.random()) + 1;
+        this.dx = (Math.random() * this.s.xmax) * (Math.random() < 0.5 ? -1 : 1);
+        this.dy = (Math.random() * this.s.ymax) * (Math.random() < 0.5 ? -1 : 1);
+        this.hl = (this.s.ttl / rint) * (this.r / this.s.rmax);
+        this.rt = Math.random() * this.hl;
+        this.s.rt = Math.random() + 1;
+        this.stop = Math.random() * 0.2 + 0.4;
+        this.s.xdrift *= Math.random() * (Math.random() < 0.5 ? -1 : 1);
+        this.s.ydrift *= Math.random() * (Math.random() < 0.5 ? -1 : 1);
+    };
+    this.fade = function() {
+        this.rt += this.s.rt;
+    };
+    this.draw = function() {
+        if (this.s.blink && (this.rt <= 0 || this.rt >= this.hl)) this.s.rt = this.s.rt * -1;
+        else if (this.rt >= this.hl) this.reset();
+        var newo = 1 - (this.rt / this.hl);
+        con.beginPath();
+        con.arc(this.x, this.y, this.r, 0, Math.PI * 2, true);
+        con.closePath();
+        var cr = this.r * newo;
+        g = con.createRadialGradient(this.x, this.y, 0, this.x, this.y, (cr <= 0 ? 1 : cr));
+        g.addColorStop(0.0, 'rgba(193,254,254,' + newo + ')');
+        g.addColorStop(this.stop, 'rgba(193,254,254,' + (newo * 0.2) + ')');
+        g.addColorStop(1.0, 'rgba(193,254,254,0)');
+        con.fillStyle = g;
+        con.fill();
+    };
+    this.move = function() {
+        this.x += (this.rt / this.hl) * this.dx;
+        this.y += (this.rt / this.hl) * this.dy;
+        if (this.x > WIDTH || this.x < 0) this.dx *= -1;
+        if (this.y > HEIGHT || this.y < 0) this.dy *= -1;
+    };
+    this.getX = function() {
+        return this.x;
+    };
+    this.getY = function() {
+        return this.y;
+    };
+};
+    
+  </script> 
 </body>
-</html>
-<!-- New Server -->
-<!-- Localized -->
+
+
+</html> 

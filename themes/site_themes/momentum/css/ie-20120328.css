@@ -1,4 +1,8 @@
-html body{width:1002px;}
+html body{
+	font-family: "Avenir Next W01","Helvetica Neue","Helvetica","Arial",sans-serif;
+	width:1002px;
+}
+
 .about-page #main,
 .contact-page #main,
 .project-page #main{
