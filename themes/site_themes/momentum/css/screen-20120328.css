@@ -710,12 +710,14 @@ p.wallpaper-alt {
 ====================================================================== */
 
 /* ipad portrait only */
+/*
 @media only screen and (orientation:portrait) and (min-device-width: 768px) and (max-device-width: 1024px){
 
 	#contact-pod .short-email{display:block;}
 	#contact-pod .email{display:none;}
 
 }
+*/
 
 
 
