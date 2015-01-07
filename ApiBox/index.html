@@ -22,6 +22,50 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         
     </head>
+
+    <style type="text/css">
+
+    pre {
+    padding: 20px;
+    background: #3A3C42;
+    color: #f8f8f2;
+    margin: 0 -20px 20px;
+    }
+    code, pre {
+    font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+    font-size: 12px;
+    overflow-x: auto;
+    }
+
+    .btn {
+    display: inline-block;
+    padding: 8px 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-size: .875rem;
+    color: #aaa;
+    background-color: #3A3C42;
+    border-color: #222;
+    border-style: solid!important;
+    border-width: 2px!important;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    transition: all .2s ease; 
+    text-decoration: none;
+    }
+    .btn:hover {
+    color: #fff;
+    }
+    
+   
+    a:link {text-decoration:none;}
+    a:visited {text-decoration:none;}
+    a:hover {text-decoration:none;}
+    a:active {text-decoration:none;}
+
+    </style>
+
     <body>
         <div id="codebox-wrapper">
 <div id="codebox-page-homepage">
@@ -69,7 +113,7 @@
                 </div>
                 <h3>Api in Document</h3>
                 <p>Stop write Api Documents in all places. just in the Document.</p>
-                <p> 不允许随处随意地书写Api，只认准一个Api文档.</p>
+                <p> 不克随处随意地书写Api，只流通一种Api文档格式.</p>
             </article>
             <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                 <div class="icon">
@@ -77,21 +121,37 @@
                 </div>
                 <h3>Api in ApiBox</h3>
                 <p>Stop struggle where is the Api writeBoard?.just make Api in ApiBox.</p>
-                <p>  停止迷惑地理解Api形态，ApiBox就是“Api文档标准设计板”.</p>
+                <p>  停止迷惑理解Api形态，简单理解==></br>“Api文档设计板”(ApiBox).</p>
             </article>
         </div>
     </div>
-    <hr>
- 
- 
-<div id="codebox-footer">
-    <p class="copyright">Made with passionate in Egs-Studio.com</p>
 
+    <hr>
+    
+    <div>
+        <pre>
+            <code>
+            <b>ApiBox beta0.0.1</b></br>
+            1. 支持ApiBlueprint语法解析。(ApiBox基于<a href="http://apiblueprint.org" target="_blank">ApiBlueprint.org</a>语法设计) </br>
+            2. 支持MarkDown语法解析。</br>
+            3. 提供Api文档模板，提供快捷输入。
+
+            <a href="/release/ApiBox_Beta0.0.1.zip" class="btn">ApiBox_Beta0.0.1.zip</a>
+            </code>         
+        </pre>
+    </div>
  
-</div>
-</div>
-    </body>
-    <script src="/static/app.js"></script>
+    <div id="codebox-footer">
+        <p class="copyright">Made with passionate in <a href="http://www.egs-studio.com">Egs-Studio.com</a></p>
+
      
-    <iframe src="/offline?iframe=true" class="hidden" />
+    </div>
+
+</div>
+
+
+</body>
+
+     
+
 </html>
