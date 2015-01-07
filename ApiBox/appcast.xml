@@ -15,10 +15,7 @@
                     <li>Upgrade to Hoedown 3.</li>
                     <li>Enhancements and bugfixes with PAPreferences 0.4 upgrade.</li>
                     <li>New syntax highlighting languages from Prism upgrade.</li>
-                    <li>Command line utility inside SharedSupport directory.</li>
-                    <li>Fixed: Segmentation fault when saving a blank document with "add newline at EOF" turned on.</li>
-                    <li>Fixed: Cursor moves when inserting trailing newline.</li>
-                    <li>Fixed: Conflicts between input methods and auto-completion.</li>
+                    <li>Command line utility inside SharedSupport directory.</li> 
                     <li>Fixed: New document windows always open maximised.</li>
                     <li>Fixed: Exported PDF cuts out contents.</li>
                     <li>Enhancement: Allow completion even if a matching character follows. </li>
@@ -28,7 +25,7 @@
                 </description>
                 <pubDate>Sun, 14 Dec 2014 02:06:51 +0800</pubDate>
                 <sparkle:minimumSystemVersion>10.8</sparkle:minimumSystemVersion>
-                <enclosure url="https://github.com/uranusjr/macdown/releases/download/v0.4/MacDown.app.zip" sparkle:version="533" sparkle:shortVersionString="0.4" length="7061624" type="application/octet-stream" sparkle:dsaSignature="MC0CFFvu58d00Cu/1g6YWQFBV/9FQJ2jAhUAj3QSVGu2K5ptGcMpLZRy6BCw5mM=" />
+                <enclosure url="https://github.com/uranusjr/macdown/releases/download/v0.4/MacDown.app.zip" sparkle:version="533" sparkle:shortVersionString="0.0.2" length="7061624" type="application/octet-stream" sparkle:dsaSignature="MC0CFFvu58d00Cu/1g6YWQFBV/9FQJ2jAhUAj3QSVGu2K5ptGcMpLZRy6BCw5mM=" />
             </item>
         
             <item>
@@ -39,7 +36,7 @@
                 </description>
                 <pubDate>Sun, 22 Jun 2014 16:37:17 +0800</pubDate>
                 <sparkle:minimumSystemVersion>10.8</sparkle:minimumSystemVersion>
-                <enclosure url="https://github.com/uranusjr/macdown/releases/download/v0.1/MacDown.app.zip" sparkle:version="157" sparkle:shortVersionString="0.1" length="5460672" type="application/octet-stream" sparkle:dsaSignature="MC0CFCzN5++PgCJf9GLNKXov8O4kxnxIAhUAnWD1lUTkIQ4WT6ndlJb3YYvEgE8=" />
+                <enclosure url="https://github.com/uranusjr/macdown/releases/download/v0.1/MacDown.app.zip" sparkle:version="157" sparkle:shortVersionString="0.0.1" length="5460672" type="application/octet-stream" sparkle:dsaSignature="MC0CFCzN5++PgCJf9GLNKXov8O4kxnxIAhUAnWD1lUTkIQ4WT6ndlJb3YYvEgE8=" />
             </item>
         
    </channel>
