@@ -6668,7 +6668,7 @@ a .icon-rotate-90:before,a .icon-rotate-180:before,a .icon-rotate-270:before,a .
 	display: inline-block
 }
 
-.icon-glass:before {
+/*.icon-glass:before {
 	content: "\f000"
 }
 
@@ -8116,7 +8116,7 @@ a .icon-rotate-90:before,a .icon-rotate-180:before,a .icon-rotate-270:before,a .
 
 .icon-renren:before {
 	content: "\f18b"
-}
+}*/
 
 @font-face {
 	font-family:"FontMfizz";src:url("/static/fonts/mfizz/font-mfizz.eot");src:url("/static/fonts/mfizz/font-mfizz.eot?#iefix") format("embedded-opentype"),url("/static/fonts/mfizz/font-mfizz.woff") format("woff"),url("/static/fonts/mfizz/font-mfizz.ttf") format("truetype"),url("/static/fonts/mfizz/font-mfizz.svg#font-mfizz") format("svg");font-weight:normal;font-style:normal
