@@ -15,18 +15,18 @@
             </description>
             <pubDate>Thur, 15 Jan 2015 11:07:17 +0800</pubDate>
             <sparkle:minimumSystemVersion>10.8</sparkle:minimumSystemVersion>
-            <enclosure url="http://www.egs-studio.com/releaseApiBox/ApiBox_Beta0.0.2.zip" sparkle:version="0.0.1" sparkle:shortVersionString="0.0.2" length="5584381" type="application/octet-stream" sparkle:dsaSignature="MCwCFFyO0pC19IloVo5ukl6QcfFVI4JhAhQ+qTWOA0l2E5tSElRkHYPEgQb++g==" />
+            <enclosure url="http://www.egs-studio.com/releaseApiBox/ApiBox_Beta0.0.2.zip" sparkle:version="0.0.0.2" sparkle:shortVersionString="0.0.2" length="5584381" type="application/octet-stream" sparkle:dsaSignature="MCwCFFyO0pC19IloVo5ukl6QcfFVI4JhAhQ+qTWOA0l2E5tSElRkHYPEgQb++g==" />
         </item>
         
         <item>
             <title>Version 0.0.1</title>
-		    <description><![CDATA[
+            <description><![CDATA[
                 <p>First publicly released version. Visit the <a href="http://www.egs-studio.com/ApiBox/">project site</a> for more information.</p>
             ]]>
             </description>
             <pubDate>Mon, 8 Dec 2014 18:33:11 +0800</pubDate>
             <sparkle:minimumSystemVersion>10.8</sparkle:minimumSystemVersion>
-            <enclosure url="http://www.egs-studio.com/releaseApiBox/ApiBox_Beta0.0.1.zip" sparkle:version="0.0.1" sparkle:shortVersionString="0.0.1" length="5460672" type="application/octet-stream" sparkle:dsaSignature="MC0CFCzN5++PgCJf9GLNKXov8O4kxnxIAhUAnWD1lUTkIQ4WT6ndlJb3YYvEgE8=" />
+            <enclosure url="http://www.egs-studio.com/releaseApiBox/ApiBox_Beta0.0.1.zip" sparkle:version="0.0.0.1" sparkle:shortVersionString="0.0.1" length="5460672" type="application/octet-stream" sparkle:dsaSignature="MC0CFCzN5++PgCJf9GLNKXov8O4kxnxIAhUAnWD1lUTkIQ4WT6ndlJb3YYvEgE8=" />
         </item>
         
 
