@@ -1,54 +1,7 @@
 var WIDTH, HEIGHT, canvas, con, g;
 var pxs = [];
 var rint = 50;
-// $(document).ready(function() {
-
-//     $('.get-year').text(new Date().getFullYear());
-
-//     var $clones = $(".testimonial-list li").clone().sort(function() {
-//         return 0.5 - Math.random();
-//     }).slice(0, 4).removeClass("hidden");
-
-//     $(".testimonial-list").empty().append($clones);
-
-    // var windowSize = function() {
-    //     WIDTH = $('.home-header').innerWidth();
-    //     HEIGHT = $('.home-header').innerHeight();
-    //     canvas = $('#galaxy');
-    //     canvas.attr('width', WIDTH).attr('height', HEIGHT);
-    // };
-
-//     windowSize();
-
-//     $(window).resize(function() {
-//         windowSize();
-//     });
-
-//     $('.navburger').on("click",
-//     function(e) {
-//         e.preventDefault();
-//         e.stopPropagation();
-//         toggleMobileMenu();
-//     });
-//     $('.page-wrap').on("click",
-//     function(e) {
-//         if ($(this).hasClass('show-mobile')) {
-//             e.preventDefault();
-//             toggleMobileMenu();
-//         }
-//     });
-
-//     function toggleMobileMenu() {
-//         $('.page-wrap').toggleClass('show-mobile');
-//         $('html, body').toggleClass('no-scroll');
-//     }
-//     con = canvas[0].getContext('2d');
-//     for (var i = 0; i < 100; i++) {
-//         pxs[i] = new Circle();
-//         pxs[i].reset();
-//     }
-//     requestAnimationFrame(draw);
-// });
+ 
 
 function draw() {
     con.clearRect(0, 0, WIDTH, HEIGHT);
