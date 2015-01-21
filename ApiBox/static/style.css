@@ -8532,7 +8532,7 @@ a .icon-rotate-90:before,a .icon-rotate-180:before,a .icon-rotate-270:before,a .
 }
 
 #codebox-header .inner {
-	text-align: right;
+	/*text-align: right;*/
 	width: 100%;
 	max-width: 990px;
 	margin: 0 auto;
@@ -9914,10 +9914,10 @@ body {
 	font-family: 'codeboxNormal'
 }
 
-body #codebox-wrapper {
+/*body #codebox-wrapper {
 	min-height: 100%;
 	position: relative
-}
+}*/
 
 body #codebox-wrapper .wrapper-content {
 	padding-bottom: 54px
