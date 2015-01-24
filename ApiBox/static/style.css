@@ -8510,13 +8510,13 @@ a .icon-rotate-90:before,a .icon-rotate-180:before,a .icon-rotate-270:before,a .
 	color: inherit
 }
 
-@font-face {
+/*@font-face {
 	font-family:'codeboxNormal';src:url('/static/fonts/helvetica/normal.ttf'),url('/static/fonts/helvetica/normal.woff'),url('/static/fonts/helvetica/normal.eot'),url('/static/fonts/helvetica/normal.svg')
 }
 
 @font-face {
 	font-family:'codeboxLight';src:url('/static/fonts/helvetica/ultralight.ttf'),url('/static/fonts/helvetica/ultralight.woff'),url('/static/fonts/helvetica/ultralight.eot'),url('/static/fonts/helvetica/ultralight.svg')
-}
+}*/
 
 #codebox-header {
 	background: #081218 url(abstract-8.jpg);
