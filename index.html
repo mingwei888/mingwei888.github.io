@@ -268,13 +268,13 @@
 
     </header>
 
-    <div id="hero_new"  style="position:relative;background:#e8e8e8 url(./home-hero.jpg) no-repeat right 50%;padding:0;height:406px;text-align:center;" >
+    <div id="hero_new"  style="position:relative;background:#e8e8e8 url(http://112.74.106.142/egs-studio-images/home-hero.jpg) no-repeat right 50%;padding:0;height:406px;text-align:center;" >
 
         <p class="light-shadow p1-title " style="">Explore Pure Passion</p>
 
         <p class="light-shadow p2-subtitle" style="">锻造极致"工具"</p>
 
-        <canvas id="galaxy" style="margin:0px 0px;"></canvas>
+        <canvas id="galaxy" style="margin:0px 0px;padding:145px 0px 0px 0px"></canvas>
     </div>
 
     <div id="main" role="main" class="clearfix">
@@ -285,7 +285,7 @@
             <div class="limiter">
                 <div class="item">
                     <a href="http://www.egs-studio.com/wujiApp" target="_blank">
-                        <h3>悟寂App</h3>
+                        <h3>悟寂 App</h3>
 
                         <p>“悟寂”的存在，就为了能够让你能够更直接地体会佛法的超凡魅力。(just for explore pure passion)</p>
                     </a>
@@ -300,7 +300,7 @@
                 </div>
                 <div class="item">
                     <a href="http://www.ApiBox.cc" target="_blank">
-                        <h3>ApiBox </h3>
+                        <h3>ApiBox Mac</h3>
 
                         <p> would be “Api文档标准设计板”。拥有小小的野心，ApiBox想成为“攻城狮”的必备生产力工具。</p>
                     </a>
@@ -308,9 +308,9 @@
 
                 <div class="item">
                     <a href="http://112.74.106.142/index.html" target="_blank">
-                        <h3>月下楼古文库<span class="heart">♡</span></h3>
+                        <h3>月下楼古文库<span class="heart">♡</span>web</h3>
 
-                        <p>何以谓『为往圣继绝学』？也许古典诗词中的神来一笔，或许经过着几个朝代的酝酿。挖地基ing...</p>
+                        <p>『为往圣继绝学』苍古一瞬，王侯如过隙尘，金玉如瓦砾，仅最富有灵气的文字长存。</p>
                     </a>
                 </div>
 
@@ -325,20 +325,20 @@
             <b></b>
             <section id="services" class="clearfix">
                 <div class="service">
-                    <h1 class="" style="font-family:egs-studio-font;color:#666;font-size:28px;margin:10px 2px;"><span style="margin:0px 3px;color:rgb(94,146,145)">❁</span>磨于器</h1>
+                    <h1 class="" style="font-family:egs-studio-font;color:#666;font-size:28px;margin:10px 2px;"><span style="margin:0px 5px;color:rgb(94,146,145)">❁</span>磨于器</h1>
 
                     <p  >简单工具，自发地拥有某种天然的魅力。区别于，过度产品标签化的实体，过度规模化的娱乐品。Egs-Studio 只回归“纯工具”的理解。</p>
                 </div>
 
                 <div class="service">
-                    <h1 class="" style="font-family:egs-studio-font;color:#666;font-size:28px;margin:10px 2px;"><span style="margin:0px 3px;color:rgb(94,146,145)">☸</span>雕于工</h1>
+                    <h1 class="" style="font-family:egs-studio-font;color:#666;font-size:28px;margin:10px 2px;"><span style="margin:0px 5px;color:rgb(94,146,145)">❀</span>雕于工</h1>
 
 
                     <p  >考究的工艺，会得到时间证明出来的尊重。而这，通常都不膨胀初衷，都不放肆激进。</p>
                 </div>
 
                 <div class="service">
-                    <h1 class="" style="font-family:egs-studio-font;color:#666;font-size:28px;margin:10px 2px;"><span style="margin:0px 3px;color:rgb(94,146,145)">☯</span>善于意</h1>
+                    <h1 class="" style="font-family:egs-studio-font;color:#666;font-size:28px;margin:10px 2px;"><span style="margin:0px 5px;color:rgb(94,146,145)">☯</span>善于意</h1>
 
 
                     <p  >意蕴的把握和雕琢。如果只话语谈及，只会漫无边际，徒然无功。不掉入陷阱，最好的方法就是，不乱动。</p>
@@ -346,7 +346,7 @@
 
                 <div class="service">
 
-                    <h1  style=" color:#666;font-size:28px;margin:10px 2px;"><span style="margin:0px 3px;color:rgb(94,146,145)">♞</span>wish</h1>
+                    <h1  style=" color:#666;font-size:28px;margin:10px 2px;"><span style="margin:0px 5px;color:rgb(94,146,145)">♞</span>wish</h1>
 
                     <p  >Egs-Studio is a small studio of App designers, developers. We all believe in effective product
                         design and development and are dedicated to creating product that work just for you .</p>
@@ -393,7 +393,7 @@
             WIDTH = $("#hero_new").innerWidth();
             HEIGHT = $("#hero_new").innerHeight();
             canvas = $("#galaxy");
-            canvas.attr("width", WIDTH).attr("height", HEIGHT)
+            canvas.attr("width", WIDTH).attr("height", HEIGHT-145)
         };
         windowSize();
         $(window).resize(function () {
