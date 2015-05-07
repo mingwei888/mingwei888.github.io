@@ -260,35 +260,28 @@ h3.tools{
 .home #hero{
 	background:#e8e8e8 url(../home-hero.jpg) no-repeat right 50%;
 	padding:0;
-	padding:154px 0 0 0;
-	height:252px;
+	/*padding:0px 0 0 0;*/
+	height:406px;
 }
-/*
-.home #hero h1{
-	margin-bottom:18px;
-	text-indent:-999em;
-	height:50px;
-	line-height:50px;
-	background:transparent url(../momentum_o.png) no-repeat 50% 0;
-}
-*/
+
 
 
 .home .intro{
 	display:block;
 	width:100%;
 	text-shadow:0 1px 0 rgba(255,255,255,.8);
+	background-color:#eeeeee;
 }
 
 .home .intro .item{
-	width:33%;
+	width:25%;
 	float:left;
 }
 
 .home .intro a{
 	display:block;
 	padding:42px 0;
-	margin:0 46px;
+	margin:0 18px;
 	text-decoration:none;
 	color:#000;
 }
@@ -309,12 +302,14 @@ h3.tools{
 
 .home .serviceswrap i{
 	display:block;
-	width:891px;
-	height:680px;
+	width:891px;/**/
+	height:680px;/**/
 	position:absolute;
-	bottom:12%;
+	/*bottom:12%;*/
+	top:5%;
 	right:34%;
 	background:transparent url(../apiBox2.png) no-repeat 0 0;
+
 }
 
 .home .serviceswrap b{
@@ -698,20 +693,3 @@ p.wallpaper-alt {
 /* @group Print Styles
 ====================================================================== */
 
-/*
-@media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }  
-  a, a:visited { text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }   
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; }  
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3 { page-break-after: avoid; }
-}
-*/
-/* Localized */

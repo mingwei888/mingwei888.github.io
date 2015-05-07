@@ -12,18 +12,18 @@
 	background-size:24px 24px;
 }
 
-h2.design,
-h3.design{
+
+.design{
 	background-image:url(../icons/design@2x.png);
 	background-size:24px 24px;
 }
-h2.development,
-h3.development{
+
+.development{
 	background-image:url(../icons/development@2x.png);
 	background-size:24px 24px;
 }
-h2.strategy,
-h3.strategy{
+
+.strategy{
 	background-image:url(../icons/strategy@2x.png);
 	background-size:24px 24px;
 }

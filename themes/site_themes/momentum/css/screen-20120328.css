@@ -351,6 +351,9 @@ footer div{
 ====================================================================== */
 .home .intro{
 	background-color:#eeeeee;
+	display:block;
+	width:100%;
+	text-shadow:0 1px 0 rgba(255,255,255,.8);
 }
 
 .home #hero{
@@ -382,7 +385,13 @@ footer div{
 	background:transparent url(../icons/go.png) no-repeat 0 0;
 }
 
-.home .intro {display:none;}
+.home .intro {
+
+	display:block;
+	width:100%;
+	text-shadow:0 1px 0 rgba(255,255,255,.8);
+	background-color:#eeeeee;
+}
 
 .home #services{
 
@@ -409,9 +418,9 @@ footer div{
 	padding-left:38px;
 }
 
-h2.design{background:transparent url(../icons/design_24.png) no-repeat 0 50%;}
-h2.development{background:transparent url(../icons/development_24.png) no-repeat 0 0%;}
-h2.strategy{background:transparent url(../icons/strategy_24.png) no-repeat 0 50%;}
+.design{background:transparent url(../icons/design_24.png) no-repeat 0 50%;}
+.development{background:transparent url(../icons/development_24.png) no-repeat 0 0%;}
+.strategy{background:transparent url(../icons/strategy_24.png) no-repeat 0 50%;}
 
 .home #services .service p{
 	color:#717171;
@@ -709,15 +718,7 @@ p.wallpaper-alt {
 /* @group Media queries for Retina display and Landscape ipad
 ====================================================================== */
 
-/* ipad portrait only */
-/*
-@media only screen and (orientation:portrait) and (min-device-width: 768px) and (max-device-width: 1024px){
 
-	#contact-pod .short-email{display:block;}
-	#contact-pod .email{display:none;}
-
-}
-*/
 
 
 
