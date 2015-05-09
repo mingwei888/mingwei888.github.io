@@ -1,136 +1,493 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>悟寂--explore pure passion</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-<!--     <link rel="stylesheet" href="as-production-assets/styles/fonts.css"> -->
+    <!--     <link rel="stylesheet" href="as-production-assets/styles/fonts.css"> -->
     <link rel="stylesheet" href="as-production-assets2/styles/frame.css">
     <link rel="stylesheet" href="as-production-assets3/templates-0.0.2/ui/css/templates.css">
     <style>
-      [swyg="header"] {background:#1e9984;background-size:cover;background-repeat:repeat;background-position-x:undefined;background-position-y:undefined;font-weight:normal;}[swyg="header"]:hover {background:#1e9984;background-size:cover;background-repeat:repeat;background-position-x:undefined;background-position-y:undefined;font-weight:normal;}[swyg="header"] [swyg-overlay="true"]{background:#6d83b7;}[swyg="appName"] {margin-top:27px;margin-bottom:0px;margin-left:21px;margin-right:0px;background-size:cover;color:#dcfcfd;font-weight:700;font-family:'Open Sans';font-size:18px;line-height:30px;text-shadow:none;}[swyg="appName"]:hover {background-size:cover;color:#dcfcfd;font-weight:700;font-family:'Open Sans';font-size:18px;line-height:30px;text-shadow:none;}[swyg="logo"] {margin-top:10px;margin-bottom:22px;background-size:cover;font-weight:normal;}[swyg="logo"]:hover {background-size:cover;font-weight:normal;}[swyg="phone"] {background-size:cover;font-weight:normal;}[swyg="phone"]:hover {background-size:cover;font-weight:normal;}[swyg="social"] {background-size:cover;font-weight:normal;}[swyg="social"]:hover {background-size:cover;font-weight:normal;}[swyg="badges"] {margin-top:60px;margin-bottom:0px;background-size:cover;font-weight:normal;}[swyg="badges"]:hover {background-size:cover;font-weight:normal;}[swyg="slider-1"] {background:#111111;background:#111111 url(godView01.jpg);background-size:cover;background-repeat:repeat;background-position-x:0;background-position-y:0;font-weight:normal;}[swyg="slider-1"]:hover {background:#111111;background:#111111 url(godView01.jpg);background-size:cover;background-repeat:repeat;background-position-x:0;background-position-y:0;font-weight:normal;}[swyg="slider-1"] [swyg-overlay="true"]{background:#000000;opacity:.8;}[swyg="slider-1-headline"] {margin-top:194px;margin-bottom:35px;margin-left:0px;margin-right:20px;background-size:cover;color:#FFFFFF;font-weight:100;text-align:left;font-family:'Open Sans';font-size:46px;line-height:54px;text-shadow:1px 1px 1px #222;}[swyg="slider-1-headline"]:hover {background-size:cover;color:#FFFFFF;font-weight:100;text-align:left;font-family:'Open Sans';font-size:46px;line-height:54px;text-shadow:1px 1px 1px #222;}[swyg="slider-1-text"] {margin-top:0px;margin-bottom:0px;margin-left:0px;margin-right:82px;background-size:cover;color:#ffffff;font-weight:normal;text-align:left;font-family:'Open Sans';font-size:18px;line-height:30px;text-shadow:1px 1px 1px #222;}[swyg="slider-1-text"]:hover {background-size:cover;color:#ffffff;font-weight:normal;text-align:left;font-family:'Open Sans';font-size:18px;line-height:30px;text-shadow:1px 1px 1px #222;}[swyg="slider-2"] {background:#aaedea;background-size:cover;font-weight:normal;}[swyg="slider-2"]:hover {background:#aaedea;background-size:cover;font-weight:normal;}[swyg="slider-2-headline"] {margin-top:102px;margin-bottom:38px;margin-left:128px;margin-right:148px;background-size:cover;color:#333333;font-weight:100;text-align:center;font-family:'Open Sans';font-size:16px;line-height:18px;}[swyg="slider-2-headline"]:hover {background-size:cover;color:#333333;font-weight:100;text-align:center;font-family:'Open Sans';font-size:16px;line-height:18px;}[swyg="feature"] {background-size:cover;font-weight:normal;}[swyg="feature"]:hover {background-size:cover;font-weight:normal;}[swyg="featureTitle"] {background-size:cover;font-weight:true;text-align:center;font-family:'Open Sans';font-size:22px;}[swyg="featureTitle"]:hover {background-size:cover;font-weight:true;text-align:center;font-family:'Open Sans';font-size:22px;}[swyg="featureDescription"] {background-size:cover;font-weight:normal;font-family:'Open Sans';}[swyg="featureDescription"]:hover {background-size:cover;font-weight:normal;font-family:'Open Sans';}[swyg="slider-3"] {background:#111111;background:#111111 url(godPeace00.jpg);background-size:cover;background-repeat:repeat;background-position-x:0;background-position-y:0;font-weight:normal;}[swyg="slider-3"]:hover {background:#111111;background:#111111 url(godPeace00.jpg);background-size:cover;background-repeat:repeat;background-position-x:0;background-position-y:0;font-weight:normal;}[swyg="slider-3"] [swyg-overlay="true"]{background:#000000;opacity:.8;}[swyg="slider-3-headline"] {margin-top:247px;margin-bottom:0px;margin-left:107px;margin-right:119px;background-size:cover;color:#ffffff;font-weight:100;text-align:center;font-family:'Open Sans';font-size:40px;line-height:56px;}[swyg="slider-3-headline"]:hover {background-size:cover;color:#ffffff;font-weight:100;text-align:center;font-family:'Open Sans';font-size:40px;line-height:56px;}[swyg="footer"] {background:#ffffff;background-size:cover;font-weight:normal;}[swyg="footer"]:hover {background:#ffffff;background-size:cover;font-weight:normal;}[swyg="footer"] [swyg-overlay="true"]{background:#000000;}[swyg="footerLink"] {background-size:cover;color:#000000;font-weight:normal;text-decoration:underline;}[swyg="footerLink"]:hover {background-size:cover;color:#000000;font-weight:normal;text-decoration:underline;}[swyg="footerText"] {background-size:cover;font-weight:true;}[swyg="footerText"]:hover {background-size:cover;font-weight:true;}
+        [swyg="header"] {
+            background: #1e9984;
+            background-size: cover;
+            background-repeat: repeat;
+            background-position-x: undefined;
+            background-position-y: undefined;
+            font-weight: normal;
+        }
+
+        [swyg="header"]:hover {
+            background: #1e9984;
+            background-size: cover;
+            background-repeat: repeat;
+            background-position-x: undefined;
+            background-position-y: undefined;
+            font-weight: normal;
+        }
+
+        [swyg="header"] [swyg-overlay="true"] {
+            background: #6d83b7;
+        }
+
+        [swyg="appName"] {
+            margin-top: 27px;
+            margin-bottom: 0px;
+            margin-left: 21px;
+            margin-right: 0px;
+            background-size: cover;
+            color: #dcfcfd;
+            font-weight: 700;
+            font-family: 'Open Sans';
+            font-size: 18px;
+            line-height: 30px;
+            text-shadow: none;
+        }
+
+        [swyg="appName"]:hover {
+            background-size: cover;
+            color: #dcfcfd;
+            font-weight: 700;
+            font-family: 'Open Sans';
+            font-size: 18px;
+            line-height: 30px;
+            text-shadow: none;
+        }
+
+        [swyg="logo"] {
+            margin-top: 10px;
+            margin-bottom: 22px;
+            background-size: cover;
+            font-weight: normal;
+        }
+
+        [swyg="logo"]:hover {
+            background-size: cover;
+            font-weight: normal;
+        }
+
+        [swyg="phone"] {
+            background-size: cover;
+            font-weight: normal;
+        }
+
+        [swyg="phone"]:hover {
+            background-size: cover;
+            font-weight: normal;
+        }
+
+        [swyg="social"] {
+            background-size: cover;
+            font-weight: normal;
+        }
+
+        [swyg="social"]:hover {
+            background-size: cover;
+            font-weight: normal;
+        }
+
+        [swyg="badges"] {
+            margin-top: 60px;
+            margin-bottom: 0px;
+            background-size: cover;
+            font-weight: normal;
+        }
+
+        [swyg="badges"]:hover {
+            background-size: cover;
+            font-weight: normal;
+        }
+
+        [swyg="slider-1"] {
+            background: #111111;
+            background: #111111 url(http://b-egs-studio-images.oss-cn-shenzhen.aliyuncs.com/studiosite%2FgodView01.jpg);
+            background-size: cover;
+            background-repeat: repeat;
+            background-position-x: 0;
+            background-position-y: 0;
+            font-weight: normal;
+        }
+
+        [swyg="slider-1"]:hover {
+            background: #111111;
+            background: #111111 url(http://b-egs-studio-images.oss-cn-shenzhen.aliyuncs.com/studiosite%2FgodView01.jpg);
+            background-size: cover;
+            background-repeat: repeat;
+            background-position-x: 0;
+            background-position-y: 0;
+            font-weight: normal;
+        }
+
+        [swyg="slider-1"] [swyg-overlay="true"] {
+            background: #000000;
+            opacity: .8;
+        }
+
+        [swyg="slider-1-headline"] {
+            margin-top: 194px;
+            margin-bottom: 35px;
+            margin-left: 0px;
+            margin-right: 20px;
+            background-size: cover;
+            color: #FFFFFF;
+            font-weight: 100;
+            text-align: left;
+            font-family: 'Open Sans';
+            font-size: 46px;
+            line-height: 54px;
+            text-shadow: 1px 1px 1px #222;
+        }
+
+        [swyg="slider-1-headline"]:hover {
+            background-size: cover;
+            color: #FFFFFF;
+            font-weight: 100;
+            text-align: left;
+            font-family: 'Open Sans';
+            font-size: 46px;
+            line-height: 54px;
+            text-shadow: 1px 1px 1px #222;
+        }
+
+        [swyg="slider-1-text"] {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 82px;
+            background-size: cover;
+            color: #ffffff;
+            font-weight: normal;
+            text-align: left;
+            font-family: 'Open Sans';
+            font-size: 18px;
+            line-height: 30px;
+            text-shadow: 1px 1px 1px #222;
+        }
+
+        [swyg="slider-1-text"]:hover {
+            background-size: cover;
+            color: #ffffff;
+            font-weight: normal;
+            text-align: left;
+            font-family: 'Open Sans';
+            font-size: 18px;
+            line-height: 30px;
+            text-shadow: 1px 1px 1px #222;
+        }
+
+        [swyg="slider-2"] {
+            background: #aaedea;
+            background-size: cover;
+            font-weight: normal;
+        }
+
+        [swyg="slider-2"]:hover {
+            background: #aaedea;
+            background-size: cover;
+            font-weight: normal;
+        }
+
+        [swyg="slider-2-headline"] {
+            margin-top: 102px;
+            margin-bottom: 38px;
+            margin-left: 128px;
+            margin-right: 148px;
+            background-size: cover;
+            color: #333333;
+            font-weight: 100;
+            text-align: center;
+            font-family: 'Open Sans';
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        [swyg="slider-2-headline"]:hover {
+            background-size: cover;
+            color: #333333;
+            font-weight: 100;
+            text-align: center;
+            font-family: 'Open Sans';
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        [swyg="feature"] {
+            background-size: cover;
+            font-weight: normal;
+        }
+
+        [swyg="feature"]:hover {
+            background-size: cover;
+            font-weight: normal;
+        }
+
+        [swyg="featureTitle"] {
+            background-size: cover;
+            font-weight: true;
+            text-align: center;
+            font-family: 'Open Sans';
+            font-size: 22px;
+        }
+
+        [swyg="featureTitle"]:hover {
+            background-size: cover;
+            font-weight: true;
+            text-align: center;
+            font-family: 'Open Sans';
+            font-size: 22px;
+        }
+
+        [swyg="featureDescription"] {
+            background-size: cover;
+            font-weight: normal;
+            font-family: 'Open Sans';
+        }
+
+        [swyg="featureDescription"]:hover {
+            background-size: cover;
+            font-weight: normal;
+            font-family: 'Open Sans';
+        }
+
+        [swyg="slider-3"] {
+            background: #111111;
+            background: #111111 url(http://b-egs-studio-images.oss-cn-shenzhen.aliyuncs.com/studiosite%2FgodPeace00.jpg);
+            background-size: cover;
+            background-repeat: repeat;
+            background-position-x: 0;
+            background-position-y: 0;
+            font-weight: normal;
+        }
+
+        [swyg="slider-3"]:hover {
+            background: #111111;
+            background: #111111 url(http://b-egs-studio-images.oss-cn-shenzhen.aliyuncs.com/studiosite%2FgodPeace00.jpg);
+            background-size: cover;
+            background-repeat: repeat;
+            background-position-x: 0;
+            background-position-y: 0;
+            font-weight: normal;
+        }
+
+        [swyg="slider-3"] [swyg-overlay="true"] {
+            background: #000000;
+            opacity: .8;
+        }
+
+        [swyg="slider-3-headline"] {
+            margin-top: 247px;
+            margin-bottom: 0px;
+            margin-left: 107px;
+            margin-right: 119px;
+            background-size: cover;
+            color: #ffffff;
+            font-weight: 100;
+            text-align: center;
+            font-family: 'Open Sans';
+            font-size: 40px;
+            line-height: 56px;
+        }
+
+        [swyg="slider-3-headline"]:hover {
+            background-size: cover;
+            color: #ffffff;
+            font-weight: 100;
+            text-align: center;
+            font-family: 'Open Sans';
+            font-size: 40px;
+            line-height: 56px;
+        }
+
+        [swyg="footer"] {
+            background: #ffffff;
+            background-size: cover;
+            font-weight: normal;
+        }
+
+        [swyg="footer"]:hover {
+            background: #ffffff;
+            background-size: cover;
+            font-weight: normal;
+        }
+
+        [swyg="footer"] [swyg-overlay="true"] {
+            background: #000000;
+        }
+
+        [swyg="footerLink"] {
+            background-size: cover;
+            color: #000000;
+            font-weight: normal;
+            text-decoration: underline;
+        }
+
+        [swyg="footerLink"]:hover {
+            background-size: cover;
+            color: #000000;
+            font-weight: normal;
+            text-decoration: underline;
+        }
+
+        [swyg="footerText"] {
+            background-size: cover;
+            font-weight: true;
+        }
+
+        [swyg="footerText"]:hover {
+            background-size: cover;
+            font-weight: true;
+        }
     </style>
-  </head>
-  <body>
-     <div class="view-template view-editor template-parallax">
-   <div id="wrapper" class="template" ng-show="loaded">
-    <header swyg="header">
-     <div class="container">
-      <div class="logo" swyg="logo">
-       <img src="logoWujiApp.jpg" />
-      </div>
-      <div class="name" swyg="appName" style="text-shadow: 0 0 1px #bbb">
-       悟寂--explore pure passion
-      </div>
-      <div class="hidden-sm hidden-xs">
-       <div swyg="social" class="social">
-        <ul class="dark">
-         <li></li>
-         <li></li>
-         <li></li>
-        </ul>
-       </div>
-      </div>
-     </div>
-    </header>
-    <div class="slides">
-     <div class="slide-page" id="slide1" data-slide="1" data-stellar-background-ratio="0.5" swyg="slider-1">
-      <div swyg-overlay="true"></div>
-      <div class="container">
-       <div class="row">
-        <div class="col-lg-8 col-md-8 col-sm-8">
-         <h3 swyg="slider-1-headline" class="title" style="text-shadow: 0 0 3px #fff">悟寂--feeling charismatic energy</h3>
-         <p swyg="slider-1-text" class="intro" style="text-shadow: 0 0 1px #ccc">悟寂，just for pure passion…<br /><br />“悟寂”的存在，就为了让你更直接的体会佛法的超凡魅力。<br /><br />不拘泥传统直觉，不逗留有限逻辑。<br />不执著人间哲学，不沉迷宗教魅影。<br /><br />只有实体的禅悟偈语，还有脉络可循的禅修路线图。</p>
-         <div style="clear:both"></div>
-         <div class="badges" swyg="badges">
-          <a target="_blank" class="ios" href="https://itunes.apple.com/us/app/id905740155"><img src="as-production-assets3/templates-0.0.2/ui/img/ios-badge.png" /></a>
-         </div>
+</head>
+<body>
+<div class="view-template view-editor template-parallax">
+    <div id="wrapper" class="template" ng-show="loaded">
+        <header swyg="header">
+            <div class="container">
+                <div class="logo" swyg="logo">
+                    <img src="http://b-egs-studio-images.oss-cn-shenzhen.aliyuncs.com/studiosite%2FlogoWujiApp.jpg"/>
+                </div>
+                <div class="name" swyg="appName" style="text-shadow: 0 0 1px #bbb">
+                    悟寂--explore pure passion
+                </div>
+                <div class="hidden-sm hidden-xs">
+                    <div swyg="social" class="social">
+                        <ul class="dark">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="slides">
+            <div class="slide-page" id="slide1" data-slide="1" data-stellar-background-ratio="0.5" swyg="slider-1">
+                <div swyg-overlay="true"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8">
+                            <h3 swyg="slider-1-headline" class="title" style="text-shadow: 0 0 3px #fff">悟寂--feeling
+                                charismatic energy</h3>
+
+                            <p swyg="slider-1-text" class="intro" style="text-shadow: 0 0 1px #ccc">悟寂，just for pure
+                                passion…<br/><br/>“悟寂”的存在，就为了让你更直接的体会佛法的超凡魅力。<br/><br/>不拘泥传统直觉，不逗留有限逻辑。<br/>不执著人间哲学，不沉迷宗教魅影。<br/><br/>只有实体的禅悟偈语，还有脉络可循的禅修路线图。
+                            </p>
+
+                            <div style="clear:both"></div>
+                            <div class="badges" swyg="badges">
+                                <a target="_blank" class="ios" href="https://itunes.apple.com/us/app/id905740155"><img
+                                        src="as-production-assets3/templates-0.0.2/ui/img/ios-badge.png"/></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="phone white-iphone" swyg="phone" data-interval="3000" data-ride="carousel">
+                                <div id="slideshow" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img src="http://b-egs-studio-images.oss-cn-shenzhen.aliyuncs.com/studiosite%2Fshotscreen01.jpg"/>
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://b-egs-studio-images.oss-cn-shenzhen.aliyuncs.com/studiosite%2Fshotscreen02.jpg"/>
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://b-egs-studio-images.oss-cn-shenzhen.aliyuncs.com/studiosite%2Fshotscreen03.jpg"/>
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://b-egs-studio-images.oss-cn-shenzhen.aliyuncs.com/studiosite%2Fshotscreen04.jpg"/>
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://b-egs-studio-images.oss-cn-shenzhen.aliyuncs.com/studiosite%2Fshotscreen05.jpg"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-page" id="slide2" data-slide="2" data-stellar-background-ratio="0.5" swyg="slider-2">
+                <div swyg-overlay="true"></div>
+                <div class="content container">
+                    <h2 swyg="slider-2-headline" class="slide-2-headline">佛法的超凡魅力<br/><br/>既在于，更通透地理解世界的构建原理<br/><br/>更在于，更深层地构筑快乐的世界观
+                    </h2>
+
+                    <div class="row">
+                        <div class="features">
+                            <div class="col-lg-4 col-md-4 col-sm-4 clear feature" swyg="feature"
+                                 ng-repeat="(k,item) in schema.subsets('feature')" swyg-subset="{{k}}">
+                                <h3 swyg="featureTitle">易触的弦境</h3>
+
+                                <div class="img-max">
+                                    <img alt="" title="" src="http://b-egs-studio-images.oss-cn-shenzhen.aliyuncs.com/studiosite%2Ffeatrue00.jpg"/>
+                                </div>
+                                <p swyg="featureDescription">震撼神奇的生命现象，感概万物的浩大澎湃，这些善意而美妙的感动，融会在这更容易触碰的方式。</p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 clear feature" swyg="feature"
+                                 ng-repeat="(k,item) in schema.subsets('feature')" swyg-subset="{{k}}">
+                                <h3 swyg="featureTitle">惊讶的绝响</h3>
+
+                                <div class="img-max">
+                                    <img alt="" title="" src="http://b-egs-studio-images.oss-cn-shenzhen.aliyuncs.com/studiosite%2Ffeatrue01.jpg"/>
+                                </div>
+                                <p swyg="featureDescription">音乐是表达pure passion地最佳方式，它是超越逻辑语言的一种感受和交流。</p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 clear feature" swyg="feature"
+                                 ng-repeat="(k,item) in schema.subsets('feature')" swyg-subset="{{k}}">
+                                <h3 swyg="featureTitle">自由的冥想</h3>
+
+                                <div class="img-max">
+                                    <img alt="" title="" src="http://b-egs-studio-images.oss-cn-shenzhen.aliyuncs.com/studiosite%2Ffeatrue02.jpg"/>
+                                </div>
+                                <p swyg="featureDescription">超越冥想。安然自在，静力非凡，不困尘音，不恋外物，若得自由神识，超凡而入圣流，通行时空，无阻往来。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-page" id="slide3" data-slide="3" data-stellar-background-ratio="0.5" swyg="slider-3">
+                <div swyg-overlay="true"></div>
+                <div class="container">
+                    <h2 swyg="slider-3-headline" class="slide-3-headline" style="text-shadow: 0 0 3px #ccc">inspire pure
+                        passion from buddha.<br/><br/>慈悲，入定，生静力。<br/><br/>deeply feeling charismatic energy.</h2>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-         <div class="phone white-iphone" swyg="phone" data-interval="3000" data-ride="carousel">
-          <div id="slideshow" class="carousel slide">
-           <div class="carousel-inner">
-            <div class="item active">
-             <img src="shotscreen01.jpg" />
+        <footer swyg="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p><span swyg="footerText">Copyright &copy;
+                            Egs-Studio &nbsp;|&nbsp; All rights reserved. &nbsp;</span> <a
+                                href="http://www.ruoxu.me/wujiAppDoc" swyg="footerText" target="_blank">about app</a>
+                        </p>
+                        <style type="text/css">
+                            .col-lg-12 a:link {
+                                color: #333
+                            }
+
+                            .col-lg-12 a:visited {
+                                color: #333
+                            }
+
+                            .col-lg-12 a:hover {
+                                color: #333
+                            }
+
+                            .col-lg-12 a:active {
+                                color: #333
+                            }
+                        </style>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-             <img src="shotscreen02.jpg" />
-            </div>
-            <div class="item">
-             <img src="shotscreen03.jpg" />
-            </div>
-            <div class="item">
-             <img src="shotscreen04.jpg" />
-            </div>
-            <div class="item">
-             <img src="shotscreen05.jpg" />
-            </div>
-           </div>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="slide-page" id="slide2" data-slide="2" data-stellar-background-ratio="0.5" swyg="slider-2">
-      <div swyg-overlay="true"></div>
-      <div class="content container">
-       <h2 swyg="slider-2-headline" class="slide-2-headline">佛法的超凡魅力<br /><br />既在于，更通透地理解世界的构建原理<br /><br />更在于，更深层地构筑快乐的世界观</h2>
-       <div class="row">
-        <div class="features">
-         <div class="col-lg-4 col-md-4 col-sm-4 clear feature" swyg="feature" ng-repeat="(k,item) in schema.subsets('feature')" swyg-subset="{{k}}">
-          <h3 swyg="featureTitle">易触的弦境</h3>
-          <div class="img-max">
-           <img alt="" title="" src="featrue00.jpg" />
-          </div>
-          <p swyg="featureDescription">震撼神奇的生命现象，感概万物的浩大澎湃，这些善意而美妙的感动，融会在这更容易触碰的方式。</p>
-         </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 clear feature" swyg="feature" ng-repeat="(k,item) in schema.subsets('feature')" swyg-subset="{{k}}">
-          <h3 swyg="featureTitle">惊讶的绝响</h3>
-          <div class="img-max">
-           <img alt="" title="" src="featrue01.jpg" />
-          </div>
-          <p swyg="featureDescription">音乐是表达pure passion地最佳方式，它是超越逻辑语言的一种感受和交流。</p>
-         </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 clear feature" swyg="feature" ng-repeat="(k,item) in schema.subsets('feature')" swyg-subset="{{k}}">
-          <h3 swyg="featureTitle">自由的冥想</h3>
-          <div class="img-max">
-           <img alt="" title="" src="featrue02.jpg" />
-          </div>
-          <p swyg="featureDescription">超越冥想。安然自在，静力非凡，不困尘音，不恋外物，若得自由神识，超凡而入圣流，通行时空，无阻往来。</p>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="slide-page" id="slide3" data-slide="3" data-stellar-background-ratio="0.5" swyg="slider-3">
-      <div swyg-overlay="true"></div>
-      <div class="container">
-       <h2 swyg="slider-3-headline" class="slide-3-headline" style="text-shadow: 0 0 3px #ccc">inspire pure passion from buddha.<br /><br />慈悲，入定，生静力。<br /><br />deeply feeling charismatic energy.</h2>
-      </div>
-     </div>
+        </footer>
     </div>
-    <footer swyg="footer">
-     <div class="container">
-      <div class="row">
-       <div class="col-lg-12">
-        <p><span swyg="footerText">Copyright &copy; Egs-Studio &nbsp;|&nbsp; All rights reserved. &nbsp;</span> <a href="http://www.ruoxu.me/wujiAppDoc" swyg="footerText" target="_blank">about app</a>  </p>
-        <style type="text/css">
-				.col-lg-12 a:link {color: #333}
-				.col-lg-12 a:visited {color: #333}
-				.col-lg-12 a:hover {color: #333}
-				.col-lg-12 a:active {color: #333}
-		</style>
-       </div>
-      </div>
-     </div>
-    </footer>
-   </div>
-  </div>
-    <script src="as-production-assets/scripts/frame.js"></script>
-    <script src="as-production-assets3/templates-0.0.2/ui/js/templates.js"></script>
-     
-    
-  </body>
+</div>
+<script src="as-production-assets/scripts/frame.js"></script>
+<script src="as-production-assets3/templates-0.0.2/ui/js/templates.js"></script>
+
+
+</body>
 </html>
