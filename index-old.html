@@ -1,0 +1,509 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Product Design &amp; App Development | Egs-Studio</title>
+    <meta name="description"
+          content="Egs-Studio is a small studio of App designers, developers. We all believe in effective product design and development and are dedicated to creating product that work just for you .">
+    <meta name="author" content="egs-studio">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="shortcut icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+    <link rel="stylesheet" href="themes/site_themes/momentum/css/screen-20120328.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)"
+          href="themes/site_themes/momentum/css/style_768-20120328.css"/>
+    <link rel="stylesheet" media="screen and (min-width: 1025px)"
+          href="themes/site_themes/momentum/css/style_1024-20120328.css"/>
+    <link rel="stylesheet" media="screen and (min-width: 1281px)"
+          href="themes/site_themes/momentum/css/style_1280-20120328.css"/>
+    <link rel="stylesheet" media="screen and (-webkit-min-device-pixel-ratio: 2)"
+          href="themes/site_themes/momentum/css/style_retina-20120328.css"/>
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" media="screen" href="themes/site_themes/momentum/css/screen-20120328.css">
+    <link rel="stylesheet" media="screen" href="themes/site_themes/momentum/css/style_768-20120328.css"/>
+    <link rel="stylesheet" media="screen" href="themes/site_themes/momentum/css/style_1024-20120328.css"/>
+    <link rel="stylesheet" media="screen" href="themes/site_themes/momentum/css/ie-20120328.css"/>
+    <![endif]-->
+    <link rel="icon" href="http://limbo0312.github.io/siteHelper/egs-studio.com/favicon.ico"
+          mce_href="http://limbo0312.github.io/siteHelper/egs-studio.com/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://limbo0312.github.io/siteHelper/egs-studio.com/favicon.ico"
+          ce_href="http://limbo0312.github.io/siteHelper/egs-studio.com/favicon.ico" type="image/x-icon">
+    <!--<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">-->
+
+    <style>
+
+        .light-shadow {
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            margin: 0;
+            width: 100%;
+            text-shadow: 0 0 8px #fff;
+        }
+
+        @font-face {
+            font-family: 'egs-studio-font';
+            src: url('http://www.youziku.com/CSS/webfonts/2015-4-27/f46db91f7d8643b6848b23f5d609f4e5/chenjishi-xingkai.bmp') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .egs-studio-font-9zi {
+            font-family: egs-studio-font;
+        }
+
+        /*type 222 heart*/
+        @keyframes pound-heart {
+            from { transform: none; }
+            50% { transform: scale(1.2); }
+            to { transform: none; }
+        }
+
+
+        .heart {
+            display: inline-block;
+
+            /*font-size:18px;*/
+            color:RGB(241,161,166);
+            text-align:center;
+            animation: pound-heart .5s infinite;
+
+        }
+
+
+
+        @keyframes egs-spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
+            }
+        }
+        .egs-spin {
+            animation: egs-spin 2s infinite linear;
+        }
+
+
+        .identity-logo{
+            float:left;
+            overflow: hidden;
+            text-indent:-999em;
+            height:55px;
+            width:30px;
+            margin:0px 0px 0px 30px;
+            background:transparent url(http://b-egs-studio-images.oss-cn-shenzhen.aliyuncs.com/studiosite%2Fegs-studio.png) no-repeat 0 0;
+            position:relative;
+        }
+        .identity-logo.current:after,
+        .identity-logo.current:before,
+        nav ul li.current a:after,
+        nav ul li.current a:before{
+            content:"";
+            position:absolute;
+            bottom:-16px;
+            border-width:8px;
+            border-style:solid;
+            border-color:#121314 transparent transparent transparent;
+            width:999em;
+        }
+
+        @media only screen and (max-width:768px){
+
+            .home .intro a {
+                display: block;
+                padding: 15px 0;
+                margin: 0 5px;
+                text-decoration: none;
+                color: #000;
+            }
+
+            .home .intro a h3 {
+                color: #383b3f;
+                font-size: 24px;
+                margin-bottom: 12px;
+                line-height: 1.2em;
+            }
+
+            .home .intro a p {
+                color: #797979;
+            }
+
+        }
+
+        .containerXX{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-weight: inherit;
+            font-style: inherit;
+            font-size: 100%;
+            font-family: inherit;
+            vertical-align: baseline;
+            background: transparent;
+
+            background-color: #fefefe;
+            box-shadow: 0 0 60px rgba(0,0,0,.2);
+            overflow: hidden;
+        }
+
+        body {
+            margin: 2.25em auto;
+            max-width: 1282px;
+            width: 90%;
+            background: transparent;
+        }
+        @media only screen and (max-width:768px){
+
+            body {
+                margin: 10px auto;
+
+                width: 96%;
+            }
+        }
+
+        footer {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-weight: inherit;
+            font-style: inherit;
+            font-size: 100%;
+            font-family: inherit;
+            vertical-align: baseline;
+            background: transparent;
+
+            height: 28px;
+            line-height: 32px;
+            padding: 2em 3.333333333333%;
+            text-shadow: 0 1px 0 rgba(255,255,255,.6);
+        }
+
+        .p1-title{
+            position:absolute;top:50%;width:100%;color: #fff;font-size:58px;
+        }
+        .p2-subtitle{
+            position:absolute;top:78%;width:100%;font-size: 18px;line-height: 1.333333em;color: #fff;font-weight: normal;font-size:21px;
+        }
+
+
+        @media only screen and (max-width:991px){
+
+            .p1-title{
+                font-size:48px;
+            }
+            .p2-subtitle{
+
+                font-size:19px;
+            }
+
+            .home .intro a{
+                display: block;
+                padding: 22px 0;
+                margin: 0 18px;
+                text-decoration: none;
+                color: #000;
+            }
+
+            footer {
+                padding: 10px 2.33%;
+            }
+        }
+        @media only screen and (max-width:640px){
+
+            .p1-title{
+                font-size:28px;
+            }
+            .p2-subtitle{
+
+                font-size:16px;
+            }
+
+            .home .intro a{
+                display: block;
+                padding: 12px 0;
+                margin: 0 18px;
+                text-decoration: none;
+                color: #000;
+                font-size:80%;
+            }
+
+            footer {
+
+                padding: 10px 2.33%;
+            }
+        }
+
+    </style>
+
+    <script src="http://libs.cdnjs.net/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body class="home">
+<div id="container " class="containerXX"  >
+
+    <header class="clearfix">
+        <a href="index.html" class="identity-logo current" title="Egs-Studio"></a>
+        <nav>
+            <ul>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="hero_new"  style="position:relative;background:#e8e8e8 url(http://b-egs-studio-images.oss-cn-shenzhen.aliyuncs.com/studiosite%2Fhome-hero.jpg) no-repeat right 50%;padding:0;height:406px;text-align:center;" >
+
+        <p class="light-shadow p1-title " style="">Explore Pure Passion</p>
+
+        <p class="light-shadow p2-subtitle" style="">锻造极致"工具"</p>
+
+        <canvas id="galaxy" style="margin:0px 0px;padding:145px 0px 0px 0px"></canvas>
+    </div>
+
+    <div id="main" role="main" class="clearfix">
+
+
+        <!--app list-->
+        <section class="intro clearfix">
+            <div class="limiter">
+                <div class="item">
+                    <a href="http://www.egs-studio.com/wujiApp" target="_blank">
+                        <h3>悟寂 App</h3>
+
+                        <p>“悟寂”的存在，就为了能够让你能够更直接地体会佛法的超凡魅力。(just for explore pure passion)</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="http://www.egs-studio.com/GitColor" target="_blank">
+                        <h3>GitColor App</h3>
+
+                        <p>A special Github Client App,Deeply think in colors' codeMood. Visualise Geekers'
+                            codePower. </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="http://www.ApiBox.cc" target="_blank">
+                        <h3>ApiBox Mac</h3>
+
+                        <p> would be “Api文档标准设计板”。拥有小小的野心，ApiBox想成为“攻城狮”的必备生产力工具。</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="http://www.yuexialou.com/index.html" target="_blank">
+                        <h3>月下楼古文库<span class="heart">♡</span>web</h3>
+
+                        <p>苍古一瞬，王侯如过隙尘，金玉如瓦砾，仅最富有灵气的文字长存。此即是『为往圣继绝学』。</p>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <div class="serviceswrap clearfix">
+            <i></i>
+            <b></b>
+            <section id="services" class="clearfix">
+                <div class="service">
+                    <h1 class="" style="font-family:egs-studio-font;color:#666;font-size:28px;margin:10px 2px;"><span style="margin:0px 5px;color:rgb(94,146,145)">❁</span>磨于器</h1>
+
+                    <p  >简单工具，自发地拥有某种天然的魅力。区别于，过度产品标签化的实体，过度规模化的娱乐品。Egs-Studio 只回归“纯工具”的理解。</p>
+                </div>
+
+                <div class="service">
+                    <h1 class="" style="font-family:egs-studio-font;color:#666;font-size:28px;margin:10px 2px;"><span style="margin:0px 5px;color:rgb(94,146,145)">❀</span>雕于工</h1>
+
+
+                    <p  >考究的工艺，会得到时间证明出来的尊重。而这，通常都不膨胀初衷，都不放肆激进。</p>
+                </div>
+
+                <div class="service">
+                    <h1 class="" style="font-family:egs-studio-font;color:#666;font-size:28px;margin:10px 2px;"><span style="margin:0px 5px;color:rgb(94,146,145)">☯</span>善于意</h1>
+
+
+                    <p  >意蕴的把握和雕琢。如果只话语谈及，只会漫无边际，徒然无功。不掉入陷阱，最好的方法就是，不乱动。</p>
+                </div>
+
+                <div class="service">
+
+                    <h1  style=" color:#666;font-size:28px;margin:10px 2px;"><span style="margin:0px 5px;color:rgb(94,146,145)">♞</span>wish</h1>
+
+                    <p  >Egs-Studio is a small studio of App designers, developers. We all believe in effective product
+                        design and development and are dedicated to creating product that work just for you .</p>
+                </div>
+
+                <div class="service clearfix">
+                    <a href="mailto:limbo0312@foxmail.com" title="limbo0312@foxmail.com" class="home-cta">Mail Chat</a>
+                </div>
+            </section>
+        </div>
+
+    </div>
+</div>
+<footer id="footerCopyright" class="clearfix">
+
+    <p style="font-size:14px">&copy; 2014 Egs-Studio ==> Stay Peace , Stay Diligence <a href="http://ip.dnspod.cn/" target="_blank"
+                                                                 style="color: rgb(94,146,145);">本地DNS优化</a></p>
+
+</footer>
+
+
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+
+<script>
+    window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')
+</script>
+
+<script defer src="js/plugins.js"></script>
+<script defer src="js/script.js"></script>
+
+<script>
+
+    /*========begin new js add    */
+    var WIDTH, HEIGHT, canvas, con, g;
+    var pxs = [];
+    var rint = 50;
+    $(document).ready(function () {
+        $(".get-year").text(new Date().getFullYear());
+        var $clones = $(".testimonial-list li").clone().sort(function () {
+            return 0.5 - Math.random()
+        }).slice(0, 4).removeClass("hidden");
+        $(".testimonial-list").empty().append($clones);
+        var windowSize = function () {
+            WIDTH = $("#hero_new").innerWidth();
+            HEIGHT = $("#hero_new").innerHeight();
+            canvas = $("#galaxy");
+            canvas.attr("width", WIDTH).attr("height", HEIGHT-145)
+        };
+        windowSize();
+        $(window).resize(function () {
+            windowSize()
+        });
+        $(".navburger").on("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleMobileMenu()
+        });
+        $(".page-wrap").on("click", function (e) {
+            if ($(this).hasClass("show-mobile")) {
+                e.preventDefault();
+                toggleMobileMenu()
+            }
+        });
+        function toggleMobileMenu() {
+            $(".page-wrap").toggleClass("show-mobile");
+            $("html, body").toggleClass("no-scroll")
+        }
+
+        con = canvas[0].getContext("2d");
+        for (var i = 0; i < 100; i++) {
+            pxs[i] = new Circle();
+            pxs[i].reset()
+        }
+        requestAnimationFrame(draw)
+    });
+    function draw() {
+        con.clearRect(0, 0, WIDTH, HEIGHT);
+        con.globalCompositeOperation = "lighter";
+        for (var i = 0; i < pxs.length; i++) {
+            pxs[i].fade();
+            pxs[i].move();
+            pxs[i].draw()
+        }
+        requestAnimationFrame(draw)
+    }
+    function Circle() {
+        this.s = {
+            ttl: 15000,
+            xmax: 5,
+            ymax: 2,
+            rmax: 7,
+            rt: 1,
+            xdef: 960,
+            ydef: 540,
+            xdrift: 4,
+            ydrift: 4,
+            random: true,
+            blink: true
+        };
+        this.reset = function () {
+            this.x = (this.s.random ? WIDTH * Math.random() : this.s.xdef);
+            this.y = (this.s.random ? HEIGHT * Math.random() : this.s.ydef);
+            this.r = ((this.s.rmax - 1) * Math.random()) + 1;
+            this.dx = (Math.random() * this.s.xmax) * (Math.random() < 0.5 ? -1 : 1);
+            this.dy = (Math.random() * this.s.ymax) * (Math.random() < 0.5 ? -1 : 1);
+            this.hl = (this.s.ttl / rint) * (this.r / this.s.rmax);
+            this.rt = Math.random() * this.hl;
+            this.s.rt = Math.random() + 1;
+            this.stop = Math.random() * 0.2 + 0.4;
+            this.s.xdrift *= Math.random() * (Math.random() < 0.5 ? -1 : 1);
+            this.s.ydrift *= Math.random() * (Math.random() < 0.5 ? -1 : 1)
+        };
+        this.fade = function () {
+            this.rt += this.s.rt
+        };
+        this.draw = function () {
+            if (this.s.blink && (this.rt <= 0 || this.rt >= this.hl)) {
+                this.s.rt = this.s.rt * -1
+            } else {
+                if (this.rt >= this.hl) {
+                    this.reset()
+                }
+            }
+            var newo = 1 - (this.rt / this.hl);
+            con.beginPath();
+            con.arc(this.x, this.y, this.r, 0, Math.PI * 2, true);
+            con.closePath();
+            var cr = this.r * newo;
+            g = con.createRadialGradient(this.x, this.y, 0, this.x, this.y, (cr <= 0 ? 1 : cr));
+            g.addColorStop(0, "rgba(193,254,254," + newo + ")");
+            g.addColorStop(this.stop, "rgba(193,254,254," + (newo * 0.2) + ")");
+            g.addColorStop(1, "rgba(193,254,254,0)");
+            con.fillStyle = g;
+            con.fill()
+        };
+        this.move = function () {
+            this.x += (this.rt / this.hl) * this.dx;
+            this.y += (this.rt / this.hl) * this.dy;
+            if (this.x > WIDTH || this.x < 0) {
+                this.dx *= -1
+            }
+            if (this.y > HEIGHT || this.y < 0) {
+                this.dy *= -1
+            }
+        };
+        this.getX = function () {
+            return this.x
+        };
+        this.getY = function () {
+            return this.y
+        }
+    }
+    ;
+
+</script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45893302" charset="UTF-8"></script>
+</body>
+
+
+</html> 
