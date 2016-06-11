@@ -1,0 +1,533 @@
+ <!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="0">
+
+    <title>『月下雕花』</title>
+
+    <!-- Bootstrap -->
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+    <!--<link rel="stylesheet" id="da-fontawesome-css" href="/static/front_end/css/font-awesome.css" type="text/css" media="all">-->
+
+    <!--mainCss -->
+    <link href="css/gold-flower-main-style.css" rel="stylesheet">
+
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.js"></script>
+    <script src="http://cdn.bootcss.com/prefixfree/1.0.6/prefixfree.min.js"></script>
+
+    <!--main.js-->
+    <script src="js/mainjs.js"></script>
+    <script src="js/global.js"></script>
+
+ 
+<!--特殊指定-->
+<style>
+        body{
+            font-family: "Helvetica Neue", "Hiragino Sans GB", "冬青黑体", Helvetica, Arial, sans-serif;
+            background-color:#FFFDED;
+            padding-top: 0px;
+            padding-bottom: 9px;
+        }
+
+        .main-header {
+            width: 100%;
+            height:auto;
+            max-height: 4140px;
+
+            position: relative;
+            overflow: hidden;
+
+
+        }
+
+        .cell_li {
+            position:relative;
+
+            height:auto;
+
+            max-width: 880px;
+            max-height: 320px;
+
+            margin: 25px auto;
+            padding: 0 5px;
+            position: relative;
+            overflow: hidden;
+
+            box-shadow: 0 0 0 3px rgba(187, 187, 187, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1);
+
+
+        }
+
+        /*.logo-title {*/
+
+            /*width:auto;*/
+            /*height:50px;*/
+
+            /*position: relative;*/
+            /*top:0px;*/
+
+
+            /*margin:10%  auto;*/
+
+            /*font-size:22px;*/
+            /*text-align:center;*/
+        /*}*/
+        @media only screen and (max-width: 415px) {
+
+            .logo-title {
+
+                width:auto;
+                height:50px;
+
+                position: relative;
+                top:0px;
+
+
+                margin:10%  auto;
+
+                font-size:16px;
+                text-align:center;
+            }
+        }
+
+        /*.p-title {*/
+
+            /*width:auto;*/
+            /*height:100px;*/
+
+            /*position: relative;*/
+            /*top:0px;*/
+
+
+            /*margin:10%  auto;*/
+
+            /*font-size:58px;*/
+            /*text-align:center;*/
+        /*}*/
+        .p-title-slogan{
+            font-size:23px;
+
+            position: relative;
+            top:-10px;
+            opacity: 0.8;
+            text-shadow: 0 0 4px #bbb;
+            color: #666;
+        }
+        .p-title-section{
+            font-size:23px;
+            text-align:left;
+
+            margin:2%  0  0  2%;
+
+            position: relative;
+            top:0px;
+            opacity: 0.8;
+            text-shadow: 0 0 8px #888;
+        }
+        @media only screen and (max-width: 415px) {
+
+            .p-title-section{
+                font-size:16px;
+            }
+            .p-title-slogan{
+                font-size:17px;
+
+                position: relative;
+                top:-10px;
+                opacity: 0.8;
+                text-shadow: 0 0 4px #bbb;
+                color: #666;
+            }
+        }
+
+        .rj-img-size{
+            width:100px;
+            height:100px;
+
+            padding:4px 4px;
+
+            position:absolute;
+            left:50%;
+            margin-left:-50px;
+
+            border:solid 1px   #DDD;
+
+        }
+        .bg-clear-div{
+
+            background-color:transparent;
+        }
+
+        .a-lit-more{
+            color:#999;
+            text-decoration: none;
+        }
+        .a-lit-more:link,
+        .a-lit-more:hover,
+        .a-lit-more:active,
+        .a-lit-more:visited{
+            color:#777;
+            text-decoration:none;
+        }
+        /*.emble-player{*/
+            /*position: absolute;*/
+            /*top: 69%;*/
+            /*opacity: 0.5;*/
+        /*}*/
+
+
+        /*@keyframes bounce-up {*/
+            /*2.5% {*/
+                /*-webkit-transform: translateY(-7px);*/
+            /*}*/
+            /*5.0% {*/
+                /*-webkit-transform: translateY(0);*/
+            /*}*/
+            /*7.5% {*/
+                /*-webkit-transform: translateY(-7px);*/
+            /*}*/
+            /*10%{*/
+                /*-webkit-transform: translateY(0);*/
+            /*}*/
+            /*100% {*/
+                /*-webkit-transform: translateY(0);*/
+            /*}*/
+        /*}*/
+
+        /*.animate-bounce-up-1{*/
+            /*animation: bounce-up 10.4s ease-out infinite;*/
+            /*color:#fff;*/
+        /*}*/
+        /*.animate-bounce-up-2{*/
+            /*animation: bounce-up 14.4s ease-out infinite;*/
+            /*color:#fff;*/
+        /*}*/
+        /*.animate-bounce-up-3{*/
+            /*animation: bounce-up 18.4s ease-out infinite;*/
+            /*color:#fff;*/
+        /*}*/
+
+        /*.player-icon {*/
+            /*font-size: 68px;*/
+            /*position: absolute;*/
+            /*z-index: 100;*/
+            /*color: rgb(255, 253, 227);*/
+            /*top: 28px;*/
+            /*left: 45px;*/
+            /*opacity:0.7;*/
+        /*}*/
+        /*.player-icon:hover{*/
+            /*color:#ddd;*/
+            /*opacity:1;*/
+        /*}*/
+
+        .cell_logo_img {
+            position: absolute;
+            height: 200px;
+            width: auto;
+            left: 48px;
+            bottom: 32px;
+        }
+
+        .cell_title_div {
+            position: absolute;
+            top: 28px;
+            left: 0px;
+            width: 200px;
+            height: 10%;
+            background-color: #f45e59;
+            border-radius: 0px 6px 6px 0px
+        }
+
+        .cell_text_dec {
+            position: absolute;
+            left: 200px;
+            top: 120px;;
+            min-height: 100px;
+        }
+
+        .cell_span_title {
+            padding: 2px 4px 2px 8px;
+            border: 1px solid darkred;
+            color: darkred;
+            font-size: 14px;
+            border-radius: 3px;
+            opacity: 0.6;
+
+        }
+
+        .cell_bquote {
+
+            margin: 0.4em 0px 0.8em 15px;
+            padding-left: 15px;
+            border-left: 2px solid #ddd;
+            color: #444;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="cotainer">
+
+    <div class="cell_li" style="min-height: 80px ;background-color: #FBFAF6">
+
+        <!--text logo-->
+        <!--<p class="logo-title" style="color:#999" >☽『月下雕花』☁ ♪ </p>-->
+
+        <!--yinzhang logo-->
+        <img style="width: 80px;width: 80px;opacity: 0.8;" src="img/yinzhangLogo4.png">
+
+        <div style="position: relative;margin-top: -40px"> <p class="p-title-slogan" style="text-align: center">唯金银不灭，愿爱意恒远</p> </div>
+
+    </div>
+
+    <!--头部bg&slogan-->
+    <div class="main-header" style="">
+
+
+
+        <div style="position:relative;top:20px;left:50%;    margin-left:-82px;height:380px;width: 164px">
+
+            <image style="height: 320px;"
+                   src="img/flower.png"></image>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="cell_li" style="margin-top: 0px;height: 320px;background-color: #f2f5e9">
+
+        <!--img-->
+        <image class="cell_logo_img" style=""
+               src="img/flower.png"></image>
+
+        <!--title-->
+        <div class="cell_title_div" style="">
+
+            <p class="p-title-section" style="font-size: 18px;color:#eee ;text-align: center" >凝夜✿紫晶</p>
+
+        </div>
+
+        <!--text-->
+        <div style="" class="cell_text_dec">
+            <span style="" class="cell_span_title">紫色表达：</span>
+            </br>
+            <blockquote style="" class="cell_bquote">冷静温和的爱意。<br></blockquote>
+            <span style="" class="cell_span_title">点缀场景：</span>
+            </br>
+            <blockquote style="" class="cell_bquote">关系稳定后，进一步升温感情基础。<br></blockquote>
+        </div>
+
+    </div>
+
+
+    <!--22222-->
+    <div class="cell_li" style="height: 320px;background-color: #F6F5EC">
+
+        <!--img-->
+        <image class="cell_logo_img" style=""
+               src="img/flower.png"></image>
+
+        <!--title-->
+        <div class="cell_title_div" style="">
+
+            <p class="p-title-section" style="font-size: 18px;color:#eee ;text-align: center" >凝夜✿紫晶</p>
+
+        </div>
+
+        <!--text-->
+        <div style="" class="cell_text_dec">
+            <span style="" class="cell_span_title">紫色表达：</span>
+            </br>
+            <blockquote style="" class="cell_bquote">冷静温和的爱意。<br></blockquote>
+            <span style="" class="cell_span_title">点缀场景：</span>
+            </br>
+            <blockquote style="" class="cell_bquote">关系稳定后，进一步升温感情基础。<br></blockquote>
+        </div>
+
+    </div>
+
+    <!--333333-->
+    <div class="cell_li" style="height: 320px;background-color: #f2f5e9">
+
+        <!--img-->
+        <image class="cell_logo_img" style=""
+               src="img/flower.png"></image>
+
+        <!--title-->
+        <div class="cell_title_div" style="">
+
+            <p class="p-title-section" style="font-size: 18px;color:#eee ;text-align: center" >凝夜✿紫晶</p>
+
+        </div>
+
+        <!--text-->
+        <div style="" class="cell_text_dec">
+            <span style="" class="cell_span_title">紫色表达：</span>
+            </br>
+            <blockquote style="" class="cell_bquote">冷静温和的爱意。<br></blockquote>
+            <span style="" class="cell_span_title">点缀场景：</span>
+            </br>
+            <blockquote style="" class="cell_bquote">关系稳定后，进一步升温感情基础。<br></blockquote>
+        </div>
+
+
+    </div>
+    <!--44444444-->
+    <div class="cell_li" style="height: 320px;background-color: #f2f5e9">
+
+        <!--img-->
+        <image class="cell_logo_img" style=""
+               src="img/flower.png"></image>
+
+        <!--title-->
+        <div class="cell_title_div" style="">
+
+            <p class="p-title-section" style="font-size: 18px;color:#eee ;text-align: center" >凝夜✿紫晶</p>
+
+        </div>
+
+        <!--text-->
+        <div style="" class="cell_text_dec">
+            <span style="" class="cell_span_title">紫色表达：</span>
+            </br>
+            <blockquote style="" class="cell_bquote">冷静温和的爱意。<br></blockquote>
+            <span style="" class="cell_span_title">点缀场景：</span>
+            </br>
+            <blockquote style="" class="cell_bquote">关系稳定后，进一步升温感情基础。<br></blockquote>
+        </div>
+
+    </div>
+
+
+    <!--应用推荐-->
+    <div>
+    <h3 style="text-align:center;padding-top:20px">月下雕花</br><small>表达爱意的最佳承载</small></h3>
+
+    </div>
+
+    <div class="row"  style="max-width: 800px;margin: 25px auto;">
+
+         <!---->
+        <div class="col-md-3 panel panel-default egs-clearpanel-bgdiv bg-clear-div" >
+
+            <a href="http://noiz.io/" class="a-lit-more" target="_blank">
+                <div style="height:100px"><img class=" img-circle    rj-img-size"
+                                               src="http://rujingxinliu.oss-cn-shenzhen.aliyuncs.com/noiz.io.png"></div>
+
+
+                <p class="egs-p-2em  ">
+                    <small>
+                        <strong class="lead">金银特制</strong></br>针对婚姻定制的金银玫瑰珠宝服务。
+                    </small>
+                </p>
+            </a>
+
+        </div>
+
+         <!---->
+        <div class="col-md-3 panel panel-default egs-clearpanel-bgdiv bg-clear-div">
+
+            <a href="http://thunderspace.me" class="a-lit-more" target="_blank">
+                <div style="height:100px"><img class=" img-circle    rj-img-size"
+                                               src="http://rujingxinliu.oss-cn-shenzhen.aliyuncs.com/thunderspace.png"></div>
+
+
+                <p class="egs-p-2em  ">
+                    <small>
+                        <strong class="lead">镀金纪念</strong></br>永久驻存最佳的纪念信物。
+                    </small>
+                </p>
+            </a>
+
+        </div>
+
+         <!---->
+        <div class="col-md-3 panel panel-default egs-clearpanel-bgdiv bg-clear-div">
+
+            <a href="http://getsunnyapp.com" class="a-lit-more" target="_blank">
+                <div style="height:100px"><img class=" img-circle    rj-img-size" style="border-radius: 50%;"
+                                               src="http://rujingxinliu.oss-cn-shenzhen.aliyuncs.com/sunny-beach.png"></div>
+
+
+                <p class="egs-p-2em  ">
+                    <small>
+                        <strong class="lead">精致工艺</strong></br>呈现有质感的礼品。
+                    </small>
+                </p>
+            </a>
+
+        </div>
+
+         <!---->
+        <div class="col-md-3 panel panel-default egs-clearpanel-bgdiv bg-clear-div">
+
+            <a href="http://www.taomix-app.com/" class="a-lit-more" target="_blank">
+                <div style="height:100px"><img class=" img-circle    rj-img-size"
+                                               src="http://rujingxinliu.oss-cn-shenzhen.aliyuncs.com/taomix.png"></div>
+
+
+                <p class="egs-p-2em  ">
+                    <small>
+                        <strong class="lead">长久收藏</strong></br>半个世纪后呈现在子孙面前的，仍旧风采动人。
+                    </small>
+                </p>
+            </a>
+
+        </div>
+
+    </div>
+
+    <!---->
+    <div   style="background-color:#689;position:relative">
+
+        <div class="cell_li" style="height:auto;max-width:400px;position:relative;">
+
+            <a href="http://www.tudou.com/programs/view/html5embed.action?type=0&code=oFlFvfsf7zk&lcode=&resourceId=0_06_05_99" target="_blank">
+            <i class="fa fa-play-circle-o player-icon" style=""></i>
+        <img style="width:400px;margin-left:-200px;position:relative;left:50%;" src="http://rujingxinliu.oss-cn-shenzhen.aliyuncs.com/thunderspace-video.jpg">
+
+            </a>
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!--footer:-->
+<div id="footer-copyright"  >
+
+
+    <i class="fa fa-cog fa-spin" style="font-size:26px;color:#999;;"></i><i class="fa fa-cog fa-spin" style="font-size:14px;color:#999;"></i>
+    <p style="color: #aaaaaa;"><a href="http://www.yuexialou.com" target="_blank" style="color: #aaaaaa;"> 深圳市深泉石科技有限公司 <br>power by egs-studio </a></p>
+
+
+</div>
+
+</body>
+</html>

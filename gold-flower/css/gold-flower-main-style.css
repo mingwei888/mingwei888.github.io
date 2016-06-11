@@ -1,0 +1,1017 @@
+/*=================通用性css*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "Helvetica Neue", "Hiragino Sans GB", "冬青黑体", Helvetica, Arial, sans-serif;
+    background-color: #f2f5e9;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+
+
+/*诗词div:书籍div  ==>隐藏*/
+.egs-nav-invisible{
+    display: none;
+}
+
+.blk-invisible {
+    display: none;
+}
+
+
+/*begin=========== @media 分成三个区间 >=1200px 、 >=769px&&<=1199px 、<=768px */
+@media screen and (min-width: 1200px) {
+    .wrapCenter {
+        max-width: 80%;
+        margin: 0px auto;
+        background-color:#fff;
+        padding: 10px 20px;
+
+        border: 1px solid #dbdfd6;
+        box-shadow: 0 0 5px rgba(0,0,0,0.15);
+        opacity: 1;
+        position: relative;
+
+        min-height: 800px;
+    }
+
+
+    /*工整 古体诗*/
+    .shi-text-style-switch{
+        text-align: center;
+        text-indent: 0em;
+    }
+    /*词 赋文*/
+    .cifu-text-style-switch{
+        text-align: left;
+        text-indent: 2em;
+    }
+}
+@media only screen
+and (min-width : 769px)
+and (max-width : 1199px)  {
+    .wrapCenter {
+        max-width: 90%;
+        margin: 0px auto;
+        background-color:#fff;
+        padding: 10px 20px;
+
+        border: 1px solid #dbdfd6;
+        box-shadow: 0 0 5px rgba(0,0,0,0.15);
+        opacity: 1;
+        position: relative;
+    }
+
+
+    .shi-text-style-switch{
+        text-align: center;
+        text-indent: 0em;
+    }
+    .cifu-text-style-switch{
+        text-align: left;
+        text-indent: 2em;
+    }
+}
+
+@media only screen and (max-width : 768px){
+    .wrapCenter {
+        max-width: 96%;
+        margin: 0px auto;
+        background-color:#fff;
+        padding: 10px 20px;
+
+        border: 1px solid #dbdfd6;
+        box-shadow: 0 0 5px rgba(0,0,0,0.15);
+        opacity: 1;
+        position: relative;
+    }
+
+    .shi-text-style-switch{
+        text-align: left;
+        text-indent: 0em;
+    }
+    .cifu-text-style-switch{
+        text-align: left;
+        text-indent: 2em;
+    }
+}
+
+@media only screen and (max-width:991px){
+    .main-text-title{
+        position:relative;top:0px;
+    }
+}
+
+@media only screen and (min-width:992px){
+
+    .main-text-title{
+        position:relative;top:41px;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px)
+{
+    .navbar-padding-width{
+        width: 150px;
+        text-align: center;
+    }
+
+
+}
+@media only screen and (max-width: 767px)
+{
+    .navbar-padding-width{
+        width: auto;
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (max-width:768px){
+
+    #home-btn-id{
+        width:45px;height:45px;
+        font-size:30px;
+        padding:3px 10px 10px 8px;
+    }
+    .home-btn-li-set{
+        position:relative;
+        top:-3px;
+    }
+    #home-btn-id:hover{
+        color:#e7e7e7;
+
+    }
+    /**/
+    #egs-main-content-id{
+        padding: 15px 11px;
+        color:#555
+    }
+
+    .egs-poet-detail{
+        padding: 10px 11px  35px 11px;
+        color:#444
+
+    }
+
+}
+
+@media only screen and (max-width:992px){
+
+    #switch-btn-id{
+        display:none;
+    }
+
+}
+
+
+@media only screen and (max-width:768px){
+
+    .egs-lit-h2{
+        font-size: 25px;
+        padding-top:6px;
+
+    }
+
+}
+
+@media only screen and (max-width:992px){
+
+    #remove-btn-id{
+        display:none;
+    }
+
+}
+
+@media only screen (max-width:992px){
+
+    .egs-top-normal{
+        position:relative;
+        top:0px;
+    }
+
+}
+/*end @media*/
+
+
+
+#header-random-text-shici,
+#header-random-text-book{
+    width: 100%;
+    min-height: 60px;
+    background-color: #F9F9F9;
+}
+
+.site-search-form {
+    padding: 14px 20%;
+    overflow: hidden;
+}
+.search-input {
+    float: left;
+    color: #999;
+    border: solid 1px #ddd;
+    width: 80%;
+    height: 37px;
+    padding: 4px 12px;
+    border-right: 0;
+    font-size: 16px;
+    border-radius: 2px 0 0 2px;
+    outline: 0;
+}
+.search-btn {
+    color: #fff;
+    border: 0;
+    background: #D1CFA9;
+    height: 37px;
+    font-size: 16px;
+    padding: 0 12px;
+    border-radius: 0 2px 2px 0;
+    width: 20%;
+}
+
+.overview-btn {
+    color: #fff;
+    border: 0;
+    background: #D1CFA9;
+    height: 42px;
+    font-size: 16px;
+    padding: 0 12px;
+    border-radius: 2px 2px 2px 2px;
+    width: 20%;
+    margin-right:20px;
+
+}
+
+.site-search {
+    display: none;
+    background-color: #fff;
+    /*background-color:  #F9F9F9*/
+    background-color: rgba(255,255,255,0.95);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+}
+.site-search.active {
+    top: 0px;
+    display: block;
+}
+
+
+#mainbody-shici,
+#mainbody-book, {
+
+    width: 100%;
+    min-height: 600px;
+    /*background-color: green;*/
+}
+
+#left-poetry-grouplist-shici,
+#left-poetry-grouplist-book{
+    /*background-color: gray;*/
+    min-height: 250px;
+}
+
+
+.egs-fix-img-wh{
+    width: 70px;
+    
+}
+
+.egs-fix-img-wh-book{
+
+    height:150px;
+    width:105px;
+
+    position:absolute;
+    left:50%;
+    margin-left:-52.5px;
+
+    padding-bottom:10px;
+}
+
+.egs-media-img{
+    margin-top: 8px
+}
+
+
+.egs-a-title{
+    text-decoration: none;
+    text-align: left;
+    font-size: x-large;
+    color:#676767;
+}
+.egs-a-title:hover{
+    text-decoration: none;
+
+}
+
+.egs-a-auther{
+    text-decoration: none;
+    text-align: left;
+    font-size: small;
+    color:#676767;
+}
+.egs-a-auther:hover{
+    text-decoration: none;
+
+}
+
+.egs-p-2em{
+    text-indent:2em;
+}
+
+.egs-shici-recommend-body{
+    background-color:rgb(253, 251, 244);
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+
+.egs-book-recommend-body{
+    background-color:rgb(246, 249, 239)
+}
+
+
+.line-dashed-egs {
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #E0DEDE;
+}
+
+
+#right-poetry-dayhot-shici,
+#right-poetry-dayhot-book,{
+    /*background-color: black;*/
+    min-height: 250px;
+}
+
+.egs-clearpanel-bgdiv{
+    background-color:#fff;
+    border:0px;
+    position:relative;
+    overflow:hidden;
+
+    /*屏蔽 panel*/
+    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, .05);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, .05);
+}
+
+.egs-zhiwu-bgdiv{
+    background-color:#fff;
+    border:0px;
+    position:relative;
+    overflow:hidden;
+
+    /*屏蔽 panel*/
+    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, .05);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, .05);
+}
+
+.egs-jieqi-img{
+
+    width:200px;
+    height:200px;
+    padding:8px 8px;
+
+    position:absolute;
+    left:50%;
+    margin-left:-100px;
+
+    border:solid 1px   #DDD;
+}
+
+.egs-zhiwu-img{
+    width:200px;
+    height:200px;
+    padding:8px 8px;
+
+    position:absolute;
+    left:50%;
+    margin-left:-100px;
+
+
+    border:solid 1px   #DDD;
+}
+
+#footer-copyright {
+    width: 100%;
+    /*min-height: 120px;*/
+    padding: 10px 0px;
+    /*background: #F6F4F0;*/
+    color: #999;
+    text-align: center;
+}
+
+/*******************************/
+/*content-page css*/
+/*******************************/
+
+#home-btn-id{
+    width:60px;height:60px;
+    font-size:50px;
+    padding:-0px 5px 10px 6px;
+
+    color:#DBDFD6;
+    float:right;
+    border:1px solid #EEE;
+    border-radius:50%;
+    position:relative;
+    top:11px;right:0px;
+    z-index:100;
+}
+#home-btn-id:hover{
+    color:#e7e7e7;
+}
+
+.home-btn-li-set{
+    position:relative;
+    top:-8px;
+}
+
+#egs-main-content-id{
+    padding: 15px 50px;
+    color:#555;
+
+}
+.egs-poet-detail{
+    /*padding: 15px 50px;*/
+    padding: 10px 50px  65px 50px;
+    color:#444
+}
+
+
+.egs-description-small{
+    font-size: 88%;
+}
+
+.egs-poetdetail-img{
+
+    width:105px;
+    height:150px;
+    padding:4px 4px;
+
+
+    position:absolute;
+    left:50%;
+    margin-left:-52.5px;
+
+    border:solid 1px   #DDD;
+}
+
+.egs-a-lit{
+    color:#444;
+    text-decoration: none;
+}
+
+
+.egs-a-lit:link,
+.egs-a-lit:active,
+.egs-a-lit:hover,
+.egs-a-lit:visited{
+    color:#555;
+    text-decoration: none;
+}
+
+.egs-poet-poetrys{
+    font-size:88%;
+    position:relative;
+    left:46px
+}
+
+#switch-btn-id{
+    color:#bbb;
+    width:40px;
+
+    text-align:center;
+    position:relative;
+    top:10px;
+    float:left;
+
+}
+#switch-btn-id:hover{
+    color:#e7e7e7;
+}
+
+
+
+#description-text-id{
+
+    position:relative;
+
+}
+.egs-focusdetail-font{
+    font-size:120%
+}
+
+.egs-weak-content{
+    font-size:85%;
+}
+
+/*******************************/
+/*directory-page css*/
+/*******************************/
+.book-chapter{
+    clear: both;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    border-bottom: 1px dashed #E0DEDE;
+    overflow: hidden;
+    padding-bottom: 5px;
+    float: left;
+    width: 100%;
+
+
+}
+.book-chapter-name{
+    font-size: 14px;
+    color: #666;
+    line-height: 20px;
+    margin:5px 0px;
+}
+.book-chapter  span{
+    width:25%;
+
+    float: left;
+    margin: 6px 0px ;
+    padding-left:2px;
+}
+
+.book-chapter  span a{
+    color:#777
+}
+
+.book-chapter  span a:hover,
+.book-chapter  span a:visited{
+    color:#555
+}
+
+/*******************************/
+/*book-content-page css*/
+/*******************************/
+
+
+
+
+.egs-a-lit-more{
+    color:#999
+
+}
+.egs-a-lit-more:hover,
+.egs-a-lit-more:visited{
+    color:#999
+}
+
+.egs-focus-book-font{
+    font-size:120%
+}
+
+.egs-curr-index{
+    color:#f45e59;
+}
+
+#remove-btn-id{
+    color:#bbb;
+    width:40px;
+
+    text-align:center;
+    position:relative;
+    top:10px;
+    float:right;
+
+}
+#remove-btn-id:hover{
+    color:#e7e7e7;
+}
+
+
+.non-display{
+    display:none;
+}
+
+#remove-btn-id{
+    width:40px;
+    height:20px;
+    font-size:14px;
+
+    color:#bbb;
+    float:right;
+
+    position:absolute;
+    top:92px;
+    right:30px;
+    z-index:101;
+}
+
+
+
+
+/*****************************/
+/*一键到顶动画*/
+/*****************************/
+#backtotop {
+    height: 50px;
+    position: fixed;
+    bottom: 55px;
+    right: -60px;
+    z-index: 1001;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+
+}
+
+#backtotop.showme {
+
+    right: 12px;
+    -moz-transform: scale(1) rotate(-360deg) translate(0px);
+    -webkit-transform: scale(1) rotate(-360deg) translate(0px);
+    -o-transform: scale(1) rotate(-360deg) translate(0px);
+    transform: scale(1) rotate(-360deg) translate(0px);
+}
+#backtotop .bttbg {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 15px 5px;
+    background-color:#ddd;
+}
+
+/*****************************/
+/*引导动画*/
+/*****************************/
+
+.poit-red {
+
+    animation: redanimation 5s infinite linear;
+    -webkit-animation: redanimation 5s infinite linear;
+    -moz-animation: redanimation 5s infinite linear;
+    -o-animation: redanimation 5s infinite linear;
+
+
+    border-width: 1px!important;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    box-shadow:0 1px 2px rgba(155,155,155,1) inset;
+    /*position:absolute;*/
+}
+
+
+
+@keyframes redanimation
+{
+    0% {
+        opacity: .7;
+        box-shadow:0 1px 2px rgba(255,255,255,0.1) inset;
+    }
+    50% {
+        opacity: 1;
+        border:1px solid rgba(59,235,235,1);
+        box-shadow:0 1px 30px rgba(59,255,255,1) inset;
+    }
+    100%{
+        opacity: .7;
+        box-shadow:0 1px 2px rgba(255,255,255,0.1) inset;
+    }
+}
+
+@-moz-keyframes redanimation /* Firefox */
+{
+    0% {
+        opacity: .5;
+        box-shadow:0 1px 2px rgba(255,255,255,0.1) inset;
+    }
+    50% {
+        opacity: 1;
+        border:1px solid rgba(59,235,235,1);
+        box-shadow:0 1px 30px rgba(59,255,255,1) inset;
+    }
+    100%{
+        opacity: .5;
+        box-shadow:0 1px 2px rgba(255,255,255,0.1) inset;
+    }
+}
+
+@-webkit-keyframes redanimation /* Safari 和 Chrome */
+{
+    0% {
+        opacity: .5;
+        box-shadow:0 1px 2px rgba(255,255,255,0.1) inset;
+    }
+    50% {
+        opacity: 1;
+        border:1px solid rgba(59,235,235,1);
+        box-shadow:0 1px 30px rgba(59,255,255,1) inset;
+    }
+    100%{
+        opacity: .5;
+        box-shadow:0 1px 2px rgba(255,255,255,0.1) inset;
+    }
+}
+
+@-o-keyframes redanimation /* Opera */
+{
+    0% {
+        opacity: .5;
+        box-shadow:0 1px 2px rgba(255,255,255,0.1) inset;
+    }
+    50% {
+        opacity: 1;
+        border:1px solid rgba(59,235,235,1);
+        box-shadow:0 1px 30px rgba(59,255,255,1) inset;
+    }
+    100%{
+        opacity: .5;
+        box-shadow:0 1px 2px rgba(255,255,255,0.1) inset;
+    }
+}
+/*****************************/
+/*心跳动画*/
+/*****************************/
+
+
+
+.heart-red-big {
+    position:absolute;
+    left:50%;
+    top:22%;
+    margin-left:-33px;
+
+    font-size:66px;
+    color:RGB(241,161,166);
+    text-align:center;
+    animation: heart-red .25s infinite alternate;
+    -webkit-animation: heart-red .25s infinite alternate;
+    -moz-animation: heart-red .25s infinite alternate;
+    -o-animation: heart-red .25s infinite alternate;
+
+
+}
+
+
+@keyframes heart-red
+{
+    to { transform: scale(1.2); }
+}
+
+@-moz-keyframes heart-red /* Firefox */
+{
+    to { transform: scale(1.2); }
+}
+
+@-webkit-keyframes heart-red /* Safari 和 Chrome */
+{
+    to { transform: scale(1.2); }
+
+}
+
+
+@-o-keyframes heart-red /* Opera */
+{
+    to { transform: scale(1.2); }
+}
+
+
+/*type 222 heart*/
+@keyframes pound-heart {
+    from { transform: none; }
+    50% { transform: scale(1.2); }
+    to { transform: none; }
+}
+
+
+.heart {
+    display: inline-block;
+
+    position:absolute;
+    left:50%;
+    top:22%;
+    margin-left:-33px;
+
+    font-size:66px;
+    color:RGB(241,161,166);
+    text-align:center;
+    /*animation: heart-red .25s infinite alternate;*/
+    animation: pound-heart .5s infinite;
+
+    transform-origin: center;
+}
+
+.heart-slow {
+    display: inline-block;
+
+    position:absolute;
+    left:50%;
+    top:22%;
+    margin-left:-33px;
+
+    font-size:66px;
+    color:RGB(241,161,166);
+    text-align:center;
+    /*animation: heart-red .25s infinite alternate;*/
+    animation: pound-heart .8s infinite;
+
+    transform-origin: center;
+}
+
+/*******************/
+/*跳动*/
+/******************/
+.graduation-cap{
+    animation: pound-heart .5s infinite;
+
+}
+
+
+@keyframes bounce-up {
+    2.5% {
+        -webkit-transform: translateY(-5px);
+    }
+    5.0% {
+        -webkit-transform: translateY(0);
+    }
+    7.5% {
+        -webkit-transform: translateY(-5px);
+    }
+    10%{
+        -webkit-transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+
+.animate-bounce-up{
+    animation: bounce-up 10.4s ease-out infinite;
+    color:#666; /*古代中国颜色：乌色*/
+}
+
+/*一览页面begin*/
+#overview-shici-id  a{
+    padding: 0px 3px 0px 3px;
+
+}
+
+.check-color{
+    color:#b10000;
+}
+.check-box-dashed{
+    border:dashed 1px #b10000;
+}
+.choose-box-bg{
+    background-color:#f9f9f9;
+    padding: 8px 4px 6px 4px;
+    border:double 3px #ddd;
+}
+/*end*/
+
+
+
+/***********************遮罩效果*********************/
+#bg-mask {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 800%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.5;
+    opacity: .50;
+    filter: alpha(opacity=50);
+}
+
+.no-mask{
+    z-index: 1002;
+}
+/*end****************/
+
+
+/*begin*******************************************/
+/*result-box*/
+/*ajax搜索*/
+#result-box-shici {
+    width: 100%;
+    /*margin-top:-12px;*/
+    background: #fff;
+    z-index: 1;
+    position: absolute;
+    /*overflow:hidden;*/
+    border: 1px #ABB4A4 solid;
+    display: block;
+}
+
+a:focus {
+    outline: none;
+    hidefocus;
+}
+
+.result-box a {
+    color: #19537D;
+    text-decoration: none;
+}
+
+.result-box a:hover {
+    text-decoration: underline;
+}
+
+.result-box {
+    width: 100%;
+    clear: both;
+    background-color: #F6F5EC;
+    border: 1px #DEE1DC solid;
+    border-bottom: none
+}
+
+.result-box .r-section {
+    clear: both;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px #DEE1DC solid;
+    overflow: hidden;
+}
+
+.result-box .r-section .mleft {
+    width: 20%;
+    float: left;
+    clear: left;
+}
+
+.result-box .r-section .mleft span {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 7px;
+    color: #676767;
+}
+
+.result-box .r-section .mright {
+    width: 80%;
+    float: left;
+    clear: right;
+    background-color: #FBFAF6;
+    border-left: 1px #DEE1DC solid;
+}
+
+.result-box .r-section .mright .adiv {
+    height: 30px;
+    width: 500px;
+    clear: both;
+    overflow: hidden;
+}
+
+.result-box .r-section .mright a {
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    font-size: 14px;
+    color: #0F0F0F;
+    margin-left: 10px;
+    width: 490px;
+}
+
+.result-box .r-section .mright a:hover {
+    text-decoration: none;
+}
+
+.result-box .r-section .mright span {
+    height: 30px;
+    line-height: 30px;
+    color: #676767;
+}
+
+/*end*******************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
